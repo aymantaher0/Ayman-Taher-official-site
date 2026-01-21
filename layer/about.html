@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <!-- Performance: Preconnect to CDN domains -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- Splide CSS with preload -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <!-- AlpineJs with defer for non-blocking -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Start Page Header  -->
+    <header class="w-full p-4 relative ">
+      <div class="relative mx-6 flex items-center justify-between rounded-full">
+        <!-- Logo -->
+        <img
+          src="../src/image/logo.png"
+          alt="logo"
+          loading="lazy"
+        />
+        <!-- center -->
+          <div 
+  x-data="{ open: false }"
+  x-effect="document.body.classList.toggle('overflow-hidden', open)"
+  class="relative"
+>
+
+  <!-- Menu Button -->
+  <button @click="open = true" class="">
+    <img 
+      src="../src/image/menu.png"
+      class="cursor-pointer"
+      loading="lazy"
+      alt="menu"
+    >
+  </button>
+
+  <!-- Backdrop -->
+  <div 
+    x-show="open"
+    x-transition.opacity
+    @click="open = false"
+    class="fixed inset-0 bg-black/40 backdrop-blur-sm z-40"
+  ></div>
+
+  <!-- Slide Menu -->
+  <nav
+    x-show="open"
+    x-transition:enter="transition transform duration-300 ease-out"
+    x-transition:enter-start="translate-x-full"
+    x-transition:enter-end="translate-x-0"
+    x-transition:leave="transition transform duration-300 ease-in"
+    x-transition:leave-start="translate-x-0"
+    x-transition:leave-end="translate-x-full"
+    class="fixed top-0 right-0 h-full w-[280px]
+           bg-[#101010] border-l border-gray-800
+           z-50 p-6 flex flex-col"
+  >
+
+    <!-- Close Button -->
+    <button 
+      @click="open = false"
+      class="self-end text-gray-400 hover:text-white transition"
+    >
+      ✕
+    </button>
+
+    <!-- Links -->
+    <div class="mt-10 flex flex-col gap-6 text-gray-400">
+    <a href="../index.html" class="hover:text-white transition">Home</a>
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="academy.html" class="hover:text-white transition">Academy</a>
+        <a href="services.html" class="hover:text-white transition">Services</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+    </div>
+
+  </nav>
+
+
+</div>
+
+        <div class=" items-center gap-3">
+          <a
+            class=" flex  items-center text-center  "
+            href="#"
+            >
+            <button class="btn btn-gradient btn-accent w-[235px] h-[45px] rounded-3xl text-white">Back A Consultatino</button>
+            </a>
+      </div>
+    </header>
+    <!-- End Page Header  -->
+     <main>
+        <!--Start Section Hero -->
+      <section id="hero" class="hero w-[85%] align-center mx-auto">
+        <div class="head-hero m-8  p-8  ">
+        
+          <h1 class=" text-4xl text-center font-bold ">
+          About Me
+          </h1>
+          <p class="py-4 text-base font-medium text-center">
+            I offer a complete education system for designers centered around two main products: Course
+          </p>
+        </div>
+        <!--Content -->
+      <div class="flex flex-col md:flex-row w-full bg-black justify-center rounded-xl overflow-hidden gap-8 ">
+
+        <!-- img -->
+  <div class="md:w-[35%] w-full border-8 border-gray-800 rounded-4xl overflow-hidden">
+    <img
+      src="../src/image/hero.png"
+      alt="image "
+      class="w-full h-full object-cover"
+    />
+  </div>
+
+
+  <!-- Text -->
+  <div class="md:w-[50%] w-full p-6 text-white border-2 bg-[#101010] rounded-4xl border-gray-800">
+    <h2 class="text-4xl p-4 text-left font-bold mb-4">
+  Abut Me
+    </h2>
+    <p class="text-gray-300  text-2xl p-4 text-left">
+      Create an excellent 
+      <span class=" text-green-600 font-bold text-2xl ">User Expreinxce</span>
+      For Your User users on the web and mobile
+    </p>
+    <p class="text-white leading-relaxed text-xl p-4 text-left">
+      
+Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO of Syntax, a Creative Education Company in the MENA region based in Egypt.
+    </p>
+    <p class="text-white leading-relaxed text-xl p-4 text-left">
+Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO of Syntax, a Creative Education Company in the MENA region based in Egypt.
+</p>
+  
+    <button class=" flex  items-star mt-24 text-center btn btn-gradient btn-accent w-[235px] h-[45px] rounded-3xl text-white ">More Details
+</button>
+  
+
+</div>
+</div>
+<!--layers  -->
+  <div class="layers flex flex-col md:flex-row w-full bg-black justify-center rounded-xl overflow-hidden gap-2 my-8 mx-8">
+
+    <div class="layer w-[23%] md:flex-row flex flex-col  text-white border-2 bg-[#101010] rounded-2xl border-gray-800 gap-3 py-4 px-4">
+      <img src="../src/image/layer.png"
+        class=" bg-white rounded-lg"
+      alt="">
+      <div class="text-layer">
+        <h4>+10</h4>
+        <p >Unique Template</p>
+      </div>
+    </div>
+    <div class="layer w-[23%] md:flex-row flex flex-col-4 gap-3 py-4 px-4 text-white border-2 bg-[#101010] rounded-2xl border-gray-800">
+      <img src="../src/image/layer.png"
+        class=" bg-white rounded-lg"
+      alt="">
+      <div class="text-layer">
+        <h4>+10</h4>
+        <p>Unique Template</p>
+      </div>
+    </div>
+    <div class="layer w-[23%] md:flex-row flex flex-col gap-3 py-4 px-4 text-white border-2 bg-[#101010] rounded-2xl border-gray-800">
+    <img src="../src/image/layer.png"
+        class=" bg-white rounded-lg"
+      alt="">
+      <div class="text-layer">
+        <h4>+10</h4>
+        <p>Unique Template</p>
+      </div>
+    </div>
+    <div class="layer w-[23%] md:flex-row flex flex-col gap-3 py-4 px-4 text-white border-2 bg-[#101010] rounded-2xl border-gray-800">
+      <img src="../src/image/layer.png"
+        class=" bg-white rounded-lg"
+      alt="">
+      <div class="text-layer">
+        <h4>+10</h4>
+        <p>Unique Template</p>
+      </div>
+    </div>
+  
+  
+
+  </div>
+      </section>
+      <!--End Section Hero -->
+      <!--Start Section UN -->
+      <section class=" py-16">
+  <div class="max-w-6xl mx-auto px-0 bg-[#171717] w-fil">
+    
+    <!-- Header -->
+    <h2 class=" text-white text-2xl text-left md:text-3xl font-bold">
+      My Journey as Education Consultant
+    </h2>
+
+    <!-- card-->
+    <div class="">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+
+        <!-- Logo -->
+        <div class="bg-white  flex items-center justify-center p-4">
+          <img src="../src/image/syntax.png" alt="Syntax" class="h-10 object-contain">
+        </div>
+
+        <div class="bg-white  flex items-center justify-center p-4">
+          <img src="../src/image/information.png" alt="ITI" class="h-10 object-contain">
+        </div>
+
+        <div class="bg-white flex items-center justify-center p-4">
+          <img src="../src/image/orange.png" alt="Orange" class="h-10 object-contain">
+        </div>
+
+        <div class="bg-white flex items-center justify-center p-4">
+          <img src="../src/image/un-shams.png" alt="Academy" class="h-10 object-contain">
+        </div>
+
+        <div class="bg-white  flex items-center justify-center p-4">
+          <img src="../src/image/udemu.png" alt="Udemy" class="h-10 object-contain">
+        </div>
+
+        <div class="bg-white  flex items-center justify-center p-4">
+          <img src="../src/image/eyouth.png" alt="eYouth" class="h-10 object-contain">
+        </div>
+
+        <div class="bg-white  flex items-center justify-center p-4">
+          <img src="../src/image/sanaam.svg" alt="Sanaam" class="h-10 object-contain">
+        </div>
+
+        <div class="bg-white flex items-center justify-center p-4">
+          <img src="../src/image/almentor.png" alt="Almentor" class="h-10 object-contain">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+      <!--End Section UN -->
+
+
+
+
+
+           <!-- Start Section Latest Activites -->
+        <Section id="latest" class=" w-[85%] mx-auto mt-32 ">
+            <h2 class="text-center text-4xl font-semibold mb-12 ">
+    Latest Activites
+    </h2>
+    <div class="cards flex flex-col gap-2 md:flex-row bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,#0E0C15_50%)]">
+      <div class="card py-8">
+        <img src="../src/image/Course1.png" class=" " alt="">
+        <h4 class="bg-[#14CF93] text-left my-1 w-fit">Events & Talks</h4>
+        <p class="text-2xl text-left my-2">Internship Summit & UX Talk</p>
+      </div>
+      <div class="card">
+        <img src="../src/image/Course1.png" class=" " alt="">
+        <h4 class="bg-[#14CF93] text-left my-1 w-fit">Events & Talks</h4>
+        <p class="text-2xl text-left my-2">Internship Summit & UX Talk</p>
+      </div>
+      <div class="card">
+        <img src="../src/image/Course1.png" class=" " alt="">
+        <h4 class="bg-[#14CF93] text-left my-1 w-fit">Events & Talks</h4>
+        <p class="text-2xl text-left my-2">Internship Summit & UX Talk</p>
+      </div>
+    </div>
+        </Section>
+       <!-- End Section Latest Activites -->
+
+
+      <!-- Start Section Everything   -->
+          <section class="relative max-w-6xl mx-auto px-6 py-12 space-y-12">
+
+    <!-- Heading -->
+    <div class="text-center max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-semibold">
+        Everything you need to succeed
+      </h2>
+      <p class="text-gray-400 mt-4 text-sm">
+        We’ve thought of everything so you don’t have to. Focus on your vision while we handle the rest.
+      </p>
+    </div>
+
+    <!-- Top Card -->
+    <div
+      class="rounded-3xl p-8 md:p-10
+             bg-white/5 backdrop-blur
+             border border-white/10
+             shadow-[0_0_60px_rgba(0,0,0,0.6)]
+             grid md:grid-cols-2 gap-10"
+    >
+      <!-- Left -->
+      <div class="text-left">
+        <h3 class="text-3xl  font-semibold mb-3">
+          Book A consultation
+        </h3>
+        <p class="text-white  text-sm leading-relaxed max-w-md">
+          Through systematic, proven methodologies, I guide my clients to develop career growth, financial stability, and personal confidence through structured coaching programs tailored to the unique challenges of the MENA region.
+        </p>
+
+        <button
+          class="mt-6 px-6 py-3 rounded-full
+                 bg-[#14CF93] text-white font-medium
+                 hover:bg-emerald-400 transition"
+        >
+          Talk with me
+        </button>
+      </div>
+
+      <!-- Right (Mock UI) -->
+      <div class="flex justify-center items-center">
+        <div
+          class="  rounded-3xl
+                 items-center justify-center gap-4"
+        >
+          <img src="../src/image/Group1.png" class=" w-full h-full" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Cards -->
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Blogs -->
+      <div
+        class="rounded-3xl p-8
+               bg-white/5 backdrop-blur
+               border border-white/10"
+      >
+        <h4 class="text-2xl text-left font-semibold mb-2">Blogs</h4>
+        <p class="text-gray-400 text-base mb-6 text-left">
+          Drive alignment and productivity with secure shared environments.
+        </p>
+
+        <div class=" rounded-xl  mt-8">
+          <img src="../src/image/Group-blogs.png" class="w-full h-full" alt="">
+        </div>
+      </div>
+
+      <!-- Podcast -->
+      <div
+        class="rounded-3xl p-8
+               bg-white/5 backdrop-blur
+               border border-white/10"
+      >
+        <h4 class="text-2xl text-left font-semibold mb-2">
+          Podcast – حروف بودكاست
+        </h4>
+        <p class="text-gray-400 text-base text-left mb-6">
+          Drive alignment and productivity with secure shared environments.
+        </p>
+
+        <div class=" rounded-xl">
+          <img src="../src/image/Group-podcast.png" class="w-full h-full" alt="">
+          <img src="../src/image/Group-play.png" class=" w-52 items-center mx-auto" alt="">
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+       <!-- End Section  Everything -->
+
+
+         <!-- start Section communication Shots -->
+          <Section id="communication" class=" w-[85%] py-12 mx-auto mt-32 ">
+    
+    <div class="items flex flex-col md:flex-row justify-between gap-12 py-12 bg-[#171717] rounded-2xl">
+      <!-- item left -->
+      <div class="item text-left p-8 flex flex-col flex-start w-[60%] ">
+        <h1 class=" text-3xl py-6">Let’s start something
+new together</h1>
+<p class="text-sm">say hi to me or do you want to get started with your project and you need my help? Feel free to contact me.</p>
+<div class="button gap-3">
+    <button class="mt-6 px-6 py-3 rounded-full
+                 bg-[#14CF93] text-white font-medium
+                 hover:bg-emerald-400 transition">
+        Talk with me
+        </button>
+  <button class="mt-6 px-8 py-3 rounded-full
+                 bg-[#ffffff] text-black font-medium
+                 hover:bg-emerald-400 transition">
+        Book Appointment
+        </button>
+      
+</div>
+      </div>
+      <!-- item right -->
+      <div class="itme p-8 ">
+        <div class="envelope m-3 flex p-3 py-4 px-4 border border-white/[0.07] rounded-2xl
+    bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)] ">
+          <div class="icon ">
+            <img src="src/image/Envelope.svg" class=" rounded-2xl m-1 bg-[#3C3C3C] " alt="">
+          </div>
+          <span class="text-icon text-left ">
+            <p class=" text-sm ">
+            <p class=" text-sm">Chat with me</p>
+            <p class=" text-base ">kevin.gilbert.com</p>
+          </span>
+        </div>
+        <div class="phone m-3 flex justify-center items-center p-3 py-4 px-4 border border-white/[0.07] rounded-2xl
+    bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)] ">
+          <div class="icon ">
+            <img src="src/image/PhoneCall.svg" class=" rounded-2xl m-1 bg-[#3C3C3C] " alt="">
+          </div>
+          <span class="text-icon  text-left ">
+            <p class=" text-sm ">
+            <p class=" text-sm">Chat with me</p>
+            <p class=" text-base ">kevin.gilbert.com</p>
+          </span>
+        </div>
+        
+      </div>
+    </div>
+        </Section>
+        <!-- End Section communication Shots -->
+     </main>
+    <!-- Start Footer -->
+    <footer class="w-full mx-auto">
+      <hr class="py-8 w-full h-0.5" />
+      <div class="max-w-7xl mx-auto px-6 py-6">
+        <div class="flex items-center mx-8 justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-2 w-40 text-lg font-medium">
+            <img src="../src/image/logo-bottom.png" class="w-full h-full" alt="" />
+          </div>
+
+          <!-- Navigation -->
+          <nav class="hidden md:flex gap-8 text-base text-gray-400">
+        <a href="../index.html" class="hover:text-white transition">Home</a>
+        <a href="about.html" class="hover:text-white transition">About</a>
+        <a href="academy.html" class="hover:text-white transition">Academy</a>
+        <a href="services.html" class="hover:text-white transition">Services</a>
+        <a href="contact.html" class="hover:text-white transition">Contact</a>
+      </nav>
+
+          <!-- Right action -->
+          <div class="flex items-center gap-4">
+            <span class="text-xs text-gray-500 hidden sm:block">
+              © 2025 Ayman Taher
+            </span>
+
+            <button
+              class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center hover:bg-emerald-400 transition"
+            >
+              <svg
+                class="w-4 h-4 text-black"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer  -->
+    <!--  -->
+    <!-- FlyOnUI - defer to avoid render blocking -->
+    <script defer src="node_modules/flyonui/flyonui.js"></script>
+    <!--script  -->
+    <script src="../script.js"></script>
+  </body>
+</html>

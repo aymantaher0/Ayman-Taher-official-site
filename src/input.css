@@ -1,1 +1,4 @@
 @import "tailwindcss";
+/* FlyonUI */
+@plugin "flyonui";
+@import "flyonui/variants.css";
