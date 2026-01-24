@@ -2,12 +2,11 @@ const slider = document.getElementById("slider");
 const prevBtn = document.querySelector("button[onclick='prevSlide()']");
 const nextBtn = document.querySelector("button[onclick='nextSlide()']");
 
-const cardWidth = 460 + 12; // عرض الكارد + gap
-const tolerance = 5; // هامش أمان
+const cardWidth = 460 + 12; //
+const tolerance = 5; //
 
-/* ===== تحديث الأسهم ===== */
 function updateArrows() {
-  // أول السلايدر
+  //
   if (slider.scrollLeft <= tolerance) {
     prevBtn.disabled = true;
     prevBtn.classList.add("opacity-40", "cursor-not-allowed");
@@ -16,7 +15,6 @@ function updateArrows() {
     prevBtn.classList.remove("opacity-40", "cursor-not-allowed");
   }
 
-  // آخر السلايدر
   if (
     slider.scrollLeft + slider.clientWidth >=
     slider.scrollWidth - tolerance
@@ -29,7 +27,7 @@ function updateArrows() {
   }
 }
 
-/* ===== الأسهم ===== */
+/* =====  ===== */
 function nextSlide() {
   slider.scrollBy({ left: cardWidth, behavior: "smooth" });
 }
@@ -38,7 +36,7 @@ function prevSlide() {
   slider.scrollBy({ left: -cardWidth, behavior: "smooth" });
 }
 
-/* ===== Drag بالماوس ===== */
+/* ===== Drag  ===== */
 let isDown = false;
 let startX = 0;
 let scrollStart = 0;
@@ -47,7 +45,7 @@ slider.addEventListener("mousedown", (e) => {
   isDown = true;
   startX = e.pageX;
   scrollStart = slider.scrollLeft;
-  slider.classList.add("active"); // اختياري لتغيير شكل الـ cursor
+  slider.classList.add("active");
 });
 
 slider.addEventListener("mouseup", () => {
@@ -67,7 +65,7 @@ slider.addEventListener("mousemove", (e) => {
   slider.scrollLeft = scrollStart - distance;
 });
 
-/* ===== Touch للموبايل ===== */
+/* ===== Touch  ===== */
 slider.addEventListener("touchstart", (e) => {
   startX = e.touches[0].pageX;
   scrollStart = slider.scrollLeft;
@@ -78,8 +76,6 @@ slider.addEventListener("touchmove", (e) => {
   slider.scrollLeft = scrollStart - distance;
 });
 
-/* ===== تحديث الأسهم عند السحب ===== */
 slider.addEventListener("scroll", updateArrows);
 
-/* ===== أول تحميل ===== */
 updateArrows();
