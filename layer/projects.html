@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROJECTS Page</title>
+     <meta name="description" content="Learn about Ayman Taher's journey as a Product Design Lead and coach. Discover his mission, values, and expertise in helping professionals and entrepreneurs achieve their goals.">
+    <meta name="keywords" content="Ayman Taher, coach biography, product design, career guidance, professional development">
+    <meta name="theme-color" content="#14CF93">
     <link rel="stylesheet" href="../style.css" />
-    <link href="../src/output.css" rel="stylesheet" />
-    <!-- Performance: Preconnect to CDN domains -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-    <!-- Critical CSS -->
-    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- Animate CSS -->
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <!-- Splide CSS with preload -->
     <link
       rel="preload"
@@ -24,6 +28,7 @@
     <!-- AlpineJs with defer for non-blocking -->
     <script
       defer
+      crossorigin
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
@@ -79,12 +84,9 @@
               </div>
 
               <!-- Center Menu -->
-              <div
-                class="m-auto w-[85%] h-[45%] top-20 flex items-center justify-center -translate-y-8 border border-[#232323] rounded-2xl bg-gradient-to-br from-[#0e0e14] to-[#15151f]"
-              >
-                <nav
-                  class="text-center space-y-4 text-white text-xl md:text-2xl font-medium"
-                >
+                <div class="m-auto w-[85%] relative h-[65%] top-20 flex items-center justify-center -translate-y-8
+  border border-[#232323] rounded-2xl  bg-linear-to-br from-[#0e0e14] to-[#15151f]"> 
+            <nav class="text-center space-y-6 text-white text-xl md:text-3xl lg:text-4xl font-medium">
                   <a href="../index.html" class="block hover:text-[#14CF93]"
                     >HOME</a
                   >
@@ -94,10 +96,10 @@
                   <a href="projects.html" class="block text-[#14CF93]"
                     >PROJECTS</a
                   >
-                  <a href="services.html" class="block hover:text-[#14CF93]"
+                  <a href="../index.html#services" class="block hover:text-[#14CF93]"
                     >SERVICES</a
                   >
-                  <a href="academy.html" class="block hover:text-[#14CF93]"
+                  <a href="programs.html" class="block hover:text-[#14CF93]"
                     >ACADEMY</a
                   >
                   <a href="blog.html" class="block hover:text-[#14CF93]"
@@ -151,14 +153,9 @@
           </div>
         </div>
 
-        <!-- Right Button -->
-        <a class="flex items-center text-center" href="#">
-          <button
-            class="btn btn-gradient btn-accent bg-[#14CF93] md:w-[235px] md:h-[45px] h-[30px] w-[180px] rounded-3xl text-white"
-          >
-            Book Appointment
-          </button>
-        </a>
+           <!-- Right Button -->
+    <a class=" flex items-center text-center " href="consultation.html" > <button class="btn btn-gradient btn-accent bg-[#14CF93] md:w-[235px] md:h-[45px] h-[30px] w-[180px] rounded-3xl text-white">Book A Consultation</button>
+              </a>
       </div>
     </header>
     <!-- End Page Header  -->
@@ -184,24 +181,30 @@
   <!--Text-->
   <div class="card-text md:w-1/2 w-full m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left">
     <span class="flex flex-row items-center">
-      <img src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
+      <img data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+        src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
           loading="lazy"
       alt="text card"
       >
-      <h2 class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
+      <h2 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+       class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
     </span>
 
-    <h3 class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
+    <h3 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000" 
+     class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
       To Reset Tour Application
     </h3>
-    <p class="text-gray-400 leading-relaxed p-2">
+    <p data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+     class="text-gray-400 leading-relaxed p-2">
       In this case study we will see how a ticket is being  created,
        managed and resolved in RServiceDesk. In this case study we will
         see how a ticket is being  created, managed and resolved in RServiceDesk.
     </p>
 
     
-      <button  class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
+      <button 
+      data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+      class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
       <a href="project-details.html">
         View Case Study
       </a> <img src="../src/image/Arrowbut.svg" alt="Arrowbut">
@@ -210,7 +213,7 @@
 
   <!-- Img   -->
   <div class="card-img md:w-1/2 w-full h-64 md:h-auto p-0 mt-2  ">
-    <img
+    <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
       src="../src/image/card1.png"
       alt="card"
         loading="lazy"
@@ -220,26 +223,34 @@
 
         </div>
         <!-- Card -->
-        <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
+         <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
   <!--Text-->
   <div class="card-text md:w-1/2 w-full m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left">
     <span class="flex flex-row items-center">
-      <img src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
+      <img data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+        src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
           loading="lazy"
       alt="text card"
       >
-      <h2 class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
+      <h2 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+       class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
     </span>
 
-    <h3 class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
+    <h3 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000" 
+     class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
       To Reset Tour Application
     </h3>
-    <p class="text-gray-400 leading-relaxed p-2">
+    <p data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+     class="text-gray-400 leading-relaxed p-2">
       In this case study we will see how a ticket is being  created,
        managed and resolved in RServiceDesk. In this case study we will
         see how a ticket is being  created, managed and resolved in RServiceDesk.
     </p>
-      <button  class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
+
+    
+      <button 
+      data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+      class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
       <a href="project-details.html">
         View Case Study
       </a> <img src="../src/image/Arrowbut.svg" alt="Arrowbut">
@@ -248,8 +259,8 @@
 
   <!-- Img   -->
   <div class="card-img md:w-1/2 w-full h-64 md:h-auto p-0 mt-2  ">
-    <img
-      src="../src/image/card2.png"
+    <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+      src="../src/image/card1.png"
       alt="card"
         loading="lazy"
       class="w-full h-full object-cover rounded-2xl"
@@ -258,26 +269,34 @@
 
         </div>
           <!-- Card -->
-          <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
+        <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
   <!--Text-->
   <div class="card-text md:w-1/2 w-full m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left">
     <span class="flex flex-row items-center">
-      <img src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
+      <img data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+        src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
           loading="lazy"
       alt="text card"
       >
-      <h2 class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
+      <h2 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+       class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
     </span>
 
-    <h3 class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
+    <h3 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000" 
+     class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
       To Reset Tour Application
     </h3>
-    <p class="text-gray-400 leading-relaxed p-2">
+    <p data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+     class="text-gray-400 leading-relaxed p-2">
       In this case study we will see how a ticket is being  created,
        managed and resolved in RServiceDesk. In this case study we will
         see how a ticket is being  created, managed and resolved in RServiceDesk.
     </p>
-        <button  class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
+
+    
+      <button 
+      data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+      class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
       <a href="project-details.html">
         View Case Study
       </a> <img src="../src/image/Arrowbut.svg" alt="Arrowbut">
@@ -286,36 +305,44 @@
 
   <!-- Img   -->
   <div class="card-img md:w-1/2 w-full h-64 md:h-auto p-0 mt-2  ">
-    <img
-      src="../src/image/card3.png"
+    <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+      src="../src/image/card1.png"
       alt="card"
         loading="lazy"
       class="w-full h-full object-cover rounded-2xl"
     />
   </div>
 
-</div>
+        </div>
   <!-- Card -->
           <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
   <!--Text-->
   <div class="card-text md:w-1/2 w-full m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left">
     <span class="flex flex-row items-center">
-      <img src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
+      <img data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+        src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
           loading="lazy"
       alt="text card"
       >
-      <h2 class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
+      <h2 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+       class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
     </span>
 
-    <h3 class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
+    <h3 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000" 
+     class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
       To Reset Tour Application
     </h3>
-    <p class="text-gray-400 leading-relaxed p-2">
+    <p data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+     class="text-gray-400 leading-relaxed p-2">
       In this case study we will see how a ticket is being  created,
        managed and resolved in RServiceDesk. In this case study we will
         see how a ticket is being  created, managed and resolved in RServiceDesk.
     </p>
-        <button  class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
+
+    
+      <button 
+      data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+      class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
       <a href="project-details.html">
         View Case Study
       </a> <img src="../src/image/Arrowbut.svg" alt="Arrowbut">
@@ -324,7 +351,7 @@
 
   <!-- Img   -->
   <div class="card-img md:w-1/2 w-full h-64 md:h-auto p-0 mt-2  ">
-    <img
+    <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
       src="../src/image/card1.png"
       alt="card"
         loading="lazy"
@@ -334,26 +361,34 @@
 
         </div>
         <!-- Card -->
-        <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
+          <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
   <!--Text-->
   <div class="card-text md:w-1/2 w-full m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left">
     <span class="flex flex-row items-center">
-      <img src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
+      <img data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+        src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
           loading="lazy"
       alt="text card"
       >
-      <h2 class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
+      <h2 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+       class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
     </span>
 
-    <h3 class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
+    <h3 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000" 
+     class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
       To Reset Tour Application
     </h3>
-    <p class="text-gray-400 leading-relaxed p-2">
+    <p data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+     class="text-gray-400 leading-relaxed p-2">
       In this case study we will see how a ticket is being  created,
        managed and resolved in RServiceDesk. In this case study we will
         see how a ticket is being  created, managed and resolved in RServiceDesk.
     </p>
-        <button  class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
+
+    
+      <button 
+      data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+      class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
       <a href="project-details.html">
         View Case Study
       </a> <img src="../src/image/Arrowbut.svg" alt="Arrowbut">
@@ -362,8 +397,8 @@
 
   <!-- Img   -->
   <div class="card-img md:w-1/2 w-full h-64 md:h-auto p-0 mt-2  ">
-    <img
-      src="../src/image/card2.png"
+    <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+      src="../src/image/card1.png"
       alt="card"
         loading="lazy"
       class="w-full h-full object-cover rounded-2xl"
@@ -383,25 +418,33 @@
 >
   <!-- CARD 3 -->
   <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
-    <!--Text-->
+  <!--Text-->
   <div class="card-text md:w-1/2 w-full m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left">
     <span class="flex flex-row items-center">
-      <img src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
+      <img data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+        src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
           loading="lazy"
       alt="text card"
       >
-      <h2 class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
+      <h2 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+       class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
     </span>
 
-    <h3 class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
+    <h3 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000" 
+     class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
       To Reset Tour Application
     </h3>
-    <p class="text-gray-400 leading-relaxed p-2">
+    <p data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+     class="text-gray-400 leading-relaxed p-2">
       In this case study we will see how a ticket is being  created,
        managed and resolved in RServiceDesk. In this case study we will
         see how a ticket is being  created, managed and resolved in RServiceDesk.
     </p>
-        <button  class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
+
+    
+      <button 
+      data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+      class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
       <a href="project-details.html">
         View Case Study
       </a> <img src="../src/image/Arrowbut.svg" alt="Arrowbut">
@@ -410,49 +453,61 @@
 
   <!-- Img   -->
   <div class="card-img md:w-1/2 w-full h-64 md:h-auto p-0 mt-2  ">
-    <img
-      src="../src/image/card3.png"
+    <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+      src="../src/image/card1.png"
       alt="card"
         loading="lazy"
       class="w-full h-full object-cover rounded-2xl"
     />
   </div>
-  </div>
+
+        </div>
   <!-- CARD 4 -->
-  <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
+    <div class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden">
   <!--Text-->
   <div class="card-text md:w-1/2 w-full m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left">
     <span class="flex flex-row items-center">
-      <img src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
+      <img data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+        src="../src/image/header-cardsvg.svg" class="w-14 h-14 p-2  bg-[#1D7770] rounded-full" 
           loading="lazy"
       alt="text card"
       >
-      <h2 class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
+      <h2 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+       class="text-xl font-bold m-2 p-2"> RServiceDesk </h2>
     </span>
-    <h3 class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
+
+    <h3 data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000" 
+     class="md:text-2xl text-xl font-bold  text-gray-300  m-2 p-2">
       To Reset Tour Application
     </h3>
-    <p class="text-gray-400 leading-relaxed p-2">
+    <p data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+     class="text-gray-400 leading-relaxed p-2">
       In this case study we will see how a ticket is being  created,
-     managed and resolved in RServiceDesk. In this case study we will
+       managed and resolved in RServiceDesk. In this case study we will
         see how a ticket is being  created, managed and resolved in RServiceDesk.
     </p>
-          <button  class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
+
+    
+      <button 
+      data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+      class=" flex items-star md:mt-28 mt-8 text-center btn btn-gradient btn-accent w-[200px] h-[65px] rounded-4xl text-white ">
       <a href="project-details.html">
         View Case Study
       </a> <img src="../src/image/Arrowbut.svg" alt="Arrowbut">
 </button>
   </div>
+
   <!-- Img   -->
   <div class="card-img md:w-1/2 w-full h-64 md:h-auto p-0 mt-2  ">
-    <img
-      src="../src/image/card3.png"
+    <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+      src="../src/image/card1.png"
       alt="card"
         loading="lazy"
       class="w-full h-full object-cover rounded-2xl"
     />
   </div>
-  </div>
+
+        </div>
 </div>
   <button 
     @click="showAll = !showAll" 
@@ -470,50 +525,81 @@ to-[#000000]
       </section>
       <!--End Section PROJECTS -->
          <!-- start Section communication Shots -->
-        <section id="communication" class="w-[85%] md:py-18 py-8 mx-auto mt-32">
-  <div class="flex flex-col md:flex-row md:justify-between gap-8 md:gap-12 py-6 px-8 bg-[#171717] rounded-2xl">
-    <!-- item left -->
-    <div class="flex flex-col md:flex-col text-left md:w-[35%]">
-      <h1 class="text-2xl md:text-4xl font-bold py-2 md:mb-2 leading-snug">
-        Let’s start something<br class="md:hidden"/> new together
-      </h1>
-      <p class="text-sm sm:text-base text-gray-400 my-4">
-        Say hi to me or do you want to get started with your project and you need my help? Feel free to contact me.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3 mt-4">
-        <button class="text-center btn btn-gradient btn-accent w-full md:w-[160px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-white">
-          Talk with me
-        </button>
-        <button class="text-center btn btn-gradient btn-accent w-full md:w-[220px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-black border !border-white !bg-white">
-          Book Appointment
-        </button>
-      </div>
-    </div>
+    <section data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
+       id="communication" class="w-[85%] md:py-24 py-8 mx-auto mt-32">
+        <div
+          class="flex flex-col md:flex-row md:justify-between gap-8 md:gap-12 py-6 px-8 bg-[#171717] rounded-2xl"
+        >
+          <!-- item left -->
+          <div class="flex flex-col md:flex-col text-left md:w-[35%]">
+            <h1 data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+              class="text-2xl md:text-4xl font-bold py-2 md:mb-2 leading-snug"
+            >
+              Let’s start something<br class="md:hidden" />
+              new together
+            </h1>
+            <p class="text-sm sm:text-base text-gray-400 my-4">
+              Say hi to me or do you want to get started with your project and
+              you need my help? Feel free to contact me.
+            </p>
+            <div class="flex flex-col md:flex-row gap-3 mt-4">
+              <button data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+                class="text-center btn btn-gradient btn-accent w-full md:w-[160px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-white"
+              >
+                Talk with me
+              </button>
+              <button data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+                class="text-center btn btn-gradient btn-accent w-full md:w-[220px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-black border !border-white !bg-white"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </div>
 
-    <!-- item right -->
-    <div class="flex flex-col gap-4 md:w-[40%] p-4 sm:p-8">
-      <a href="#" class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]">
-        <div class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center">
-          <img src="../src/image/Envelope.svg" class="w-6 h-6" alt="Envelope">
-        </div>
-        <span class="flex flex-col text-left">
-          <p class="text-sm sm:text-base text-gray-400">Chat with me</p>
-          <p class="text-lg sm:text-2xl font-medium">kevin.gilbert.com</p>
-        </span>
-      </a>
+          <!-- item right -->
+          <div class="flex flex-col gap-4 md:w-[40%]  lg:w-[30%] p-4 sm:p-8">
+            <a data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+              href="#"
+              class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
+            >
+              <div data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+                class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center"
+              >
+                <img
+                  src="../src/image/Envelope.svg"
+                  class="w-6 h-6"
+                  loading="lazy"
+                  alt="Envelope"
+                />
+              </div>
+              <span class="flex flex-col text-left">
+                <p class="text-sm  sm:text-base text-gray-400">Chat with me</p>
+                <p class="text-lg text-[14px] lg:text-xl  font-medium">kevin.gilbert.com</p>
+              </span>
+            </a>
 
-      <a href="#" class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]">
-        <div class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center">
-          <img src="../src/image/PhoneCall.svg" class="w-6 h-6" alt="PhoneCall">
+            <a data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+              href="#"
+              class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
+            >
+              <div  data-aos-delay="200" data-aos="zoom-in" data-aos-duration="100"
+                class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center"
+              >
+                <img
+                  src="../src/image/PhoneCall.svg"
+                  class="w-6 h-6"
+                  loading="lazy"
+                  alt="PhoneCall"
+                />
+              </div>
+              <span class="flex flex-col text-left">
+                <p class="md:text-[14px] text-[12px] sm:text-base text-gray-400">Call Me</p>
+                <p class="text-lg text-[14px]  lg:text-xl font-medium">+1-202-555-0190</p>
+              </span>
+            </a>
+          </div>
         </div>
-        <span class="flex flex-col text-left">
-          <p class="text-sm sm:text-base text-gray-400">Call Me</p>
-          <p class="text-lg sm:text-2xl font-medium">+1-202-555-0190</p>
-        </span>
-      </a>
-    </div>
-  </div>
-</section>
+      </section>
         <!-- End Section communication Shots -->
 
 
@@ -523,16 +609,18 @@ to-[#000000]
       <hr />
       <!-- Desktop Footer -->
       <div
-        class="hidden md:flex max-w-7xl mx-auto px-6 py-6 items-center justify-between"
+        class="hidden md:flex  mx-auto px-6 py-6 items-center justify-between"
       >
         <!-- Logo -->
         <div class="flex items-center gap-2 w-40 text-lg font-medium">
+          <a href="/">
           <img
             src="../src/image/logo-bottom.png"
             loading="lazy"
             class="w-full h-full"
             alt="logo-bottom"
           />
+          </a>
         </div>
 
         <!-- Navigation -->
@@ -557,20 +645,46 @@ to-[#000000]
         </nav>
 
         <!-- Right action -->
-        <div class="flex items-center gap-4">
-          <span class="text-xs text-gray-500"> © 2025 Ayman Taher </span>
-          <button
-            class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center hover:bg-emerald-400 transition"
-          >
-            <img src="../src/image/plus.svg" class="w-9" alt="plus" />
-          </button>
-        </div>
+     
+   <div class="flex items-center gap-2">
+  <span class="text-xs text-gray-500 mx-6"> © 2025 Ayman Taher </span>
+
+  <div x-data="{ open: false }" class="relative flex flex-col items-center gap-2 z-50">
+
+    <!-- Dropdown Buttons  -->
+    <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2">
+      <a href="https://api.whatsapp.com/send/?phone=966543211714 " target="_blank"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition ">
+        <img width="38" src="https://img.icons8.com/fluency/48/whatsapp.png" alt="whatsapp"/>
+      </a>
+
+      <a href="mailto:welcome@aymantaher.com"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition"
+         target="_blank">
+        <img width="30" src="https://img.icons8.com/ios/50/mail.png" alt="mail"/>
+      </a>
+    </div>
+
+    <!-- Main Button -->
+    <button 
+      @click="open = !open"
+      :class="open ? 'bg-emerald-400' : 'bg-emerald-500'"
+      class="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-emerald-400 transition"
+    >
+      <img src="../src/image/plus.svg" class="w-9" alt="plus" />
+    </button>
+
+  </div>
+</div>
+
       </div>
 
       <!-- Mobile Footer / Menu Button -->
       <div class="flex md:hidden justify-between items-center px-6 py-4">
         <!-- Logo -->
-        <img src="../src/image/logo-bottom.png" alt="logo" class="w-45" />
+         <a href="/">
+           <img src="../src/image/logo-bottom.png" alt="logo" class="w-45" />
+          </a>
 
         <!-- Menu Button -->
         <button @click="open = true">
@@ -602,22 +716,22 @@ to-[#000000]
               <a href="../index.html" class="block hover:text-[#14CF93]"
                 >HOME</a
               >
-              <a href="layer/about.html" class="block hover:text-[#14CF93]"
+              <a href="about.html" class="block hover:text-[#14CF93]"
                 >ABOUT</a
               >
-              <a href="layer/projects.html" class="block text-[#14CF93]"
+              <a href="projects.html" class="block text-[#14CF93]"
                 >PROJECTS</a
               >
-              <a href="layer/services.html" class="block hover:text-[#14CF93]"
+              <a href="../index.html#services" class="block hover:text-[#14CF93]"
                 >SERVICES</a
               >
-              <a href="layer/academy.html" class="block hover:text-[#14CF93]"
+              <a href="programs.html" class="block hover:text-[#14CF93]"
                 >ACADEMY</a
               >
-              <a href="layer/blog.html" class="block hover:text-[#14CF93]"
+              <a href="blog.html" class="block hover:text-[#14CF93]"
                 >BLOGS & NEWS</a
               >
-              <a href="layer/contact.html" class="block hover:text-[#14CF93]"
+              <a href="contact.html" class="block hover:text-[#14CF93]"
                 >CONTACT</a
               >
             </nav>
@@ -672,5 +786,7 @@ to-[#000000]
     <script defer src="node_modules/flyonui/flyonui.js"></script>
     <!--script  -->
     <script defer src="../script.js"></script>
+            <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  
   </body>
 </html>

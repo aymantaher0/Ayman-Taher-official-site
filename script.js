@@ -83,3 +83,4 @@ slider.addEventListener("touchmove", (e) => {
 slider.addEventListener("scroll", updateArrows);
 
 updateArrows();
+
