@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROJECTS Page</title>
-    <meta name="description" content="Explore our comprehensive coaching and training programs. Choose from 3-month, 6-month, or custom programs designed to transform your career and financial future.">
-    <meta name="keywords" content="coaching programs, training courses, career transformation, 3-month program, 6-month program, professional development">
+    <meta name="description" content="Learn about Ayman Taher's journey as a Product Design Lead and coach. Discover his mission, values, and expertise in helping professionals and entrepreneurs achieve their goals.">
+    <meta name="keywords" content="Ayman Taher, coach biography, product design, career guidance, professional development">
     <meta name="theme-color" content="#14CF93">
     <link rel="stylesheet" href="../style.css" />
-    <link href="../src/output.css" rel="stylesheet" />
-    <!-- Performance: Preconnect to CDN domains -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-    <!-- Critical CSS -->
-    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- Animate CSS -->
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <!-- Splide CSS with preload -->
     <link
       rel="preload"
@@ -27,6 +28,7 @@
     <!-- AlpineJs with defer for non-blocking -->
     <script
       defer
+      crossorigin
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
@@ -82,12 +84,9 @@
               </div>
 
               <!-- Center Menu -->
-              <div
-                class="m-auto w-[85%] h-[45%] top-20 flex items-center justify-center -translate-y-8 border border-[#232323] rounded-2xl bg-gradient-to-br from-[#0e0e14] to-[#15151f]"
-              >
-                <nav
-                  class="text-center space-y-4 text-white text-xl md:text-2xl font-medium"
-                >
+              <div class="m-auto w-[85%] relative h-[65%] top-20 flex items-center justify-center -translate-y-8
+  border border-[#232323] rounded-2xl  bg-linear-to-br from-[#0e0e14] to-[#15151f]"> 
+            <nav class="text-center space-y-6 text-white text-xl md:text-3xl lg:text-4xl font-medium">
                   <a href="../index.html" class="block hover:text-[#14CF93]"
                     >HOME</a
                   >
@@ -97,7 +96,7 @@
                   <a href="projects.html" class="block text-[#14CF93]"
                     >PROJECTS</a
                   >
-                  <a href="services.html" class="block hover:text-[#14CF93]"
+                  <a href="../index.html#services" class="block hover:text-[#14CF93]"
                     >SERVICES</a
                   >
                   <a href="academy.html" class="block hover:text-[#14CF93]"
@@ -178,9 +177,9 @@
         </div>
         <div class="cards grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="card-latest p-2">
-            <img
+            <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
               src="../src/image/Course-card1.png"
-              class="p-2"
+              class="p-2 w-full"
               alt="Course1"
             />
             <h4 class="bg-[#EDEEF9] rounded-[4px] p-1 md:mx-5 mx-2 text-gray-700 text-left my-2 w-fit">
@@ -195,9 +194,9 @@
             </div>
           </div>
           <div class="card-latest p-2">
-            <img
+            <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
               src="../src/image/Course-card2.png"
-              class="p-2"
+              class="p-2 w-full"
               alt="Course1"
             />
             <h4 class="bg-[#EDEEF9] rounded-[4px] p-1 md:mx-5 mx-2 text-gray-700 text-left my-2 w-fit">
@@ -212,9 +211,9 @@
             </div>
           </div>
           <div class="card-latest p-2">
-            <img
+            <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
               src="../src/image/Course-card1.png"
-              class="p-2"
+              class="p-2 w-full"
               alt="Course1"
             />
             <h4 class="bg-[#EDEEF9] rounded-[4px] p-1 md:mx-5 mx-2 text-gray-700 text-left my-2 w-fit">
@@ -229,9 +228,9 @@
             </div>
           </div>
           <div class="card-latest p-2">
-            <img
+            <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
               src="../src/image/Course-card2.png"
-              class="p-2"
+              class="p-2 w-full"
               alt="Course1"
             />
             <h4 class="bg-[#EDEEF9] rounded-[4px] p-1 md:mx-5 mx-2 text-gray-700 text-left my-2 w-fit">
@@ -248,140 +247,192 @@
         </div>
       </section>
       <!-- End Section Programs  -->
-          <!-- Start Section Everything   -->
-          <section class="relative max-w-6xl mx-auto px-6 py-24 space-y-12">
-    <!-- Heading -->
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-semibold">
-        Everything you need to succeed
-      </h2>
-      <p class="text-gray-400 mt-4 text-sm">
-        We've thought of everything so you don't have to. Focus on your vision while we
-handle the rest.
-      </p>
-    </div>
+           <!-- Start Section Everything   -->
+        <section 
+       class="relative w-[85%] mx-auto mt-20  space-y-12">
+        <!-- Heading -->
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+          class="text-3xl md:text-4xl font-semibold">
+            Everything you need to succeed
+          </h2>
+          <p data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
+          class="text-gray-400 mt-4 text-sm">
+            We've thought of everything so you don't have to. Focus on your
+            vision while we handle the rest.
+          </p>
+        </div>
 
-    <!-- Top Card -->
-    <div
-      class="rounded-2xl p-8 md:p-10
-             bg-white/5 backdrop-blur
-             border border-white/10
-             shadow-[0_0_60px_rgba(0,0,0,0.6)]
-             grid md:grid-cols-2 gap-10 py-12"
-    >
-      <!-- Left -->
-      <div class="text-left">
-        <h3 class="text-3xl md:mt-8 md-1 font-semibold mb-3">
-          Book A consultation
-        </h3>
-        <p class="text-[#F8FAFC]  text-sm leading-relaxed max-w-md">
-          Through systematic, proven methodologies, I guide my clients to develop career growth, financial stability, and personal confidence through structured coaching programs tailored to the unique challenges of the MENA region.
-        </p>
-
-      <button class=" flex items-star md:mb-7 mb-1  mt-2 text-center btn btn-gradient btn-accent w-[160px] h-[50px] rounded-4xl text-white ">
-        View Case Study
-</button>
-      </div>
-
-      <!-- Right (Mock UI) -->
-      <div class="flex justify-center items-center">
-        <div
-          class=" rounded-2xl
-                 items-center justify-center gap-4"
+        <!-- Top Card -->
+        <div  data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+          class="rounded-2xl p-8 md:p-10 bg-white/5 backdrop-blur border border-[#232323] shadow-[0_0_60px_rgba(0,0,0,0.6)] grid md:grid-cols-2 gap-10 py-12"
         >
-          <img src="../src/image/Group1.png" class=" w-full h-full" alt="Group1">
+          <!-- Left -->
+          <div class="text-left">
+            <h3 
+            data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
+            class="text-3xl md:mt-8 md-1 font-semibold mb-3">
+              Book A consultation
+            </h3>
+            <p class="text-[#F8FAFC] text-sm leading-relaxed max-w-md">
+              Through systematic, proven methodologies, I guide my clients to
+              develop career growth, financial stability, and personal
+              confidence through structured coaching programs tailored to the
+              unique challenges of the MENA region.
+            </p>
+
+            <button
+              class="flex items-star md:mb-7 mb-1 mt-2 text-center btn btn-gradient btn-accent w-[160px] h-[50px] rounded-4xl text-white"
+            >
+              View Case Study
+            </button>
+          </div>
+
+          <!-- Right (Mock UI) -->
+          <div 
+           class="flex justify-center items-center">
+            <div class="rounded-2xl border-[#232323] border items-center justify-center gap-4">
+              <img  data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+                src="../src/image/Group1.png"
+                class="w-full h-full"
+                loading="lazy"
+                alt="Group1"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Bottom Cards -->
-    <div class="grid md:grid-cols-2 gap-8">
+        <!-- Bottom Cards -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Blogs -->
+          <div  data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+            class="rounded-3xl p-8 bg-white/5 backdrop-blur border border-white/10"
+          >
+            <h4 class="text-2xl text-left font-semibold mb-2">Blogs</h4>
+            <p
+             data-aos-delay="200" data-aos="fade-left" data-aos-duration="1000"
+             class="text-gray-400 text-base mb-6 text-left">
+              Drive alignment and productivity with secure, shared environments
+              for cross-functional work.
+            </p>
 
-      <!-- Blogs -->
-      <div
-        class="rounded-3xl p-8
-               bg-white/5 backdrop-blur
-               border border-white/10"
-      >
-        <h4 class="text-2xl text-left font-semibold mb-2">Blogs</h4>
-        <p class="text-gray-400 text-base mb-6 text-left">
-          Drive alignment and productivity with secure, shared environments for cross-functional work.
-        </p>
+            <div class="rounded-xl mt-8">
+              <img
+                src="../src/image/Group-blogs.png"
+                class="w-full h-full"
+                loading="lazy"
+                alt="Group-blogs"
+              />
+            </div>
+          </div>
 
-        <div class=" rounded-xl  mt-8">
-          <img src="../src/image/Group-blogs.png" class="w-full h-full" alt="Group-blogs">
+          <!-- Podcast -->
+          <div data-aos-delay="200" data-aos="fade-left" data-aos-duration="1000"
+            class="rounded-3xl p-8 bg-white/5 backdrop-blur border border-white/10"
+          >
+            <h4 class="text-2xl text-left font-semibold mb-2">
+              Podcast – حروف بودكاست
+            </h4>
+            <p data-aos-delay="200" data-aos="fade-left" data-aos-duration="1000"
+             class="text-gray-400 text-base text-left mb-6">
+              Drive alignment and productivity with secure shared environments.
+            </p>
+
+            <div class="rounded-xl">
+              <img
+                src="../src/image/Group-podcast.png"
+                class="w-full h-full"
+                loading="lazy"
+                alt="Group-podcast"
+              />
+              <img
+                src="../src/image/Group-play.png"
+                class="w-52 items-center mx-auto"
+                loading="lazy"
+                alt="Group-play"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-
-      <!-- Podcast -->
-      <div
-        class="rounded-3xl p-8
-               bg-white/5 backdrop-blur
-               border border-white/10"
-      >
-        <h4 class="text-2xl text-left font-semibold mb-2">
-          Podcast – حروف بودكاست
-        </h4>
-        <p class="text-gray-400 text-base text-left mb-6">
-          Drive alignment and productivity with secure shared environments.
-        </p>
-
-        <div class=" rounded-xl">
-          <img src="../src/image/Group-podcast.png" class="w-full h-full" alt="Group-podcast">
-          <img src="../src/image/Group-play.png" class=" w-52 items-center mx-auto" alt="Group-play">
-        </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+      </section>
        <!-- End Section  Everything -->
 
-         <!-- start Section communication Shots -->
-        <section id="communication" class="w-[85%] md:py-18 py-8 mx-auto mt-32">
-  <div class="flex flex-col md:flex-row md:justify-between gap-8 md:gap-12 py-6 px-8 bg-[#171717] rounded-2xl">
-    <!-- item left -->
-    <div class="flex flex-col md:flex-col text-left md:w-[35%]">
-      <h1 class="text-2xl md:text-4xl font-bold py-2 md:mb-2 leading-snug">
-        Let’s start something<br class="md:hidden"/> new together
-      </h1>
-      <p class="text-sm sm:text-base text-gray-400 my-4">
-        Say hi to me or do you want to get started with your project and you need my help? Feel free to contact me.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3 mt-4">
-        <button class="text-center btn btn-gradient btn-accent w-full md:w-[160px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-white">
-          Talk with me
-        </button>
-        <button class="text-center btn btn-gradient btn-accent w-full md:w-[220px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-black border !border-white !bg-white">
-          Book Appointment
-        </button>
-      </div>
-    </div>
+           <!-- start Section communication Shots -->
+    <section data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
+       id="communication" class="w-[85%] md:py-24 py-8 mx-auto mt-32">
+        <div
+          class="flex flex-col md:flex-row md:justify-between gap-8 md:gap-12 py-6 px-8 bg-[#171717] rounded-2xl"
+        >
+          <!-- item left -->
+          <div class="flex flex-col md:flex-col text-left md:w-[35%]">
+            <h1 data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+              class="text-2xl md:text-4xl font-bold py-2 md:mb-2 leading-snug"
+            >
+              Let’s start something<br class="md:hidden" />
+              new together
+            </h1>
+            <p class="text-sm sm:text-base text-gray-400 my-4">
+              Say hi to me or do you want to get started with your project and
+              you need my help? Feel free to contact me.
+            </p>
+            <div class="flex flex-col md:flex-row gap-3 mt-4">
+              <button data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+                class="text-center btn btn-gradient btn-accent w-full md:w-[160px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-white"
+              >
+                Talk with me
+              </button>
+              <button data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+                class="text-center btn btn-gradient btn-accent w-full md:w-[220px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-black border !border-white !bg-white"
+              >
+                Book Appointment
+              </button>
+            </div>
+          </div>
 
-    <!-- item right -->
-    <div class="flex flex-col gap-4 md:w-[40%] p-4 sm:p-8">
-      <a href="#" class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]">
-        <div class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center">
-          <img src="../src/image/Envelope.svg" class="w-6 h-6" alt="Envelope">
-        </div>
-        <span class="flex flex-col text-left">
-          <p class="text-sm sm:text-base text-gray-400">Chat with me</p>
-          <p class="text-lg sm:text-2xl font-medium">kevin.gilbert.com</p>
-        </span>
-      </a>
+          <!-- item right -->
+          <div class="flex flex-col gap-4 md:w-[40%]  lg:w-[30%] p-4 sm:p-8">
+            <a data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+              href="#"
+              class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
+            >
+              <div data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+                class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center"
+              >
+                <img
+                  src="../src/image/Envelope.svg"
+                  class="w-6 h-6"
+                  loading="lazy"
+                  alt="Envelope"
+                />
+              </div>
+              <span class="flex flex-col text-left">
+                <p class="text-sm  sm:text-base text-gray-400">Chat with me</p>
+                <p class="text-lg text-[14px] lg:text-xl  font-medium">kevin.gilbert.com</p>
+              </span>
+            </a>
 
-      <a href="#" class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]">
-        <div class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center">
-          <img src="../src/image/PhoneCall.svg" class="w-6 h-6" alt="PhoneCall">
+            <a data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
+              href="#"
+              class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
+            >
+              <div  data-aos-delay="200" data-aos="zoom-in" data-aos-duration="100"
+                class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center"
+              >
+                <img
+                  src="../src/image/PhoneCall.svg"
+                  class="w-6 h-6"
+                  loading="lazy"
+                  alt="PhoneCall"
+                />
+              </div>
+              <span class="flex flex-col text-left">
+                <p class="md:text-[14px] text-[12px] sm:text-base text-gray-400">Call Me</p>
+                <p class="text-lg text-[14px]  lg:text-xl font-medium">+1-202-555-0190</p>
+              </span>
+            </a>
+          </div>
         </div>
-        <span class="flex flex-col text-left">
-          <p class="text-sm sm:text-base text-gray-400">Call Me</p>
-          <p class="text-lg sm:text-2xl font-medium">+1-202-555-0190</p>
-        </span>
-      </a>
-    </div>
-  </div>
-</section>
+      </section>
         <!-- End Section communication Shots -->
     </main>
     <!-- Start Footer  -->
@@ -389,7 +440,7 @@ handle the rest.
       <hr  />
       <!-- Desktop Footer -->
       <div
-        class="hidden md:flex max-w-7xl mx-auto px-6 py-6 items-center justify-between"
+        class="hidden md:flex mx-auto px-6 py-6 items-center justify-between"
       >
         <!-- Logo -->
         <div class="flex items-center gap-2 w-40 text-lg font-medium">
@@ -410,7 +461,7 @@ handle the rest.
           <a href="layer/academy.html" class="hover:text-white transition"
             >Academy</a
           >
-          <a href="layer/services.html" class="hover:text-white transition"
+          <a href="../index.html#service" class="hover:text-white transition"
             >Services</a
           >
           <a href="layer/contact.html" class="hover:text-white transition"
@@ -423,14 +474,40 @@ handle the rest.
         </nav>
 
         <!-- Right action -->
-        <div class="flex items-center gap-4">
-          <span class="text-xs text-gray-500"> © 2025 Ayman Taher </span>
-          <button
-            class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center hover:bg-emerald-400 transition"
-          >
-            <img src="../src/image/plus.svg" class="w-9" alt="plus" />
-          </button>
-        </div>
+       <div class="flex items-center gap-2">
+  <span class="text-xs text-gray-500 mx-6"> © 2025 Ayman Taher </span>
+
+  <div x-data="{ open: false }" class="relative flex flex-col items-center gap-2 z-50">
+
+    <!-- Dropdown Buttons  -->
+    <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2">
+      <a href="https://api.whatsapp.com/send/?phone=966543211714 " target="_blank"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition ">
+        <img width="38" src="https://img.icons8.com/fluency/48/whatsapp.png" alt="whatsapp"/>
+      </a>
+
+      <a href="mailto:welcome@aymantaher.com"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition"
+         target="_blank">
+        <img width="30" src="https://img.icons8.com/ios/50/mail.png" alt="mail"/>
+      </a>
+    </div>
+
+    <!-- Main Button -->
+    <button 
+      @click="open = !open"
+      :class="open ? 'bg-emerald-400' : 'bg-emerald-500'"
+      class="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-emerald-400 transition"
+    >
+      <img src="../src/image/plus.svg" class="w-9" alt="plus" />
+    </button>
+
+  </div>
+</div>
+
+
+
+
       </div>
 
       <!-- Mobile Footer / Menu Button -->
@@ -474,7 +551,7 @@ handle the rest.
               <a href="layer/projects.html" class="block text-[#14CF93]"
                 >PROJECTS</a
               >
-              <a href="layer/services.html" class="block hover:text-[#14CF93]"
+              <a href="../index.html#services" class="block hover:text-[#14CF93]"
                 >SERVICES</a
               >
               <a href="layer/academy.html" class="block hover:text-[#14CF93]"
@@ -533,10 +610,12 @@ handle the rest.
     </footer>
 
     <!-- End Footer  -->
-    <!--  -->
+
     <!-- FlyOnUI - defer to avoid render blocking -->
     <script defer src="node_modules/flyonui/flyonui.js"></script>
     <!--script  -->
     <script defer src="../script.js"></script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  
   </body>
 </html>

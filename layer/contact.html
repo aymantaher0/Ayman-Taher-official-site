@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Page</title>
-    <meta name="description" content="Get in touch with us. Contact Ayman Taher directly for inquiries, collaboration, or to book a consultation. We're here to help you succeed.">
-    <meta name="keywords" content="contact, get in touch, inquiry, booking, collaboration, coaching inquiry">
+   <meta name="description" content="Learn about Ayman Taher's journey as a Product Design Lead and coach. Discover his mission, values, and expertise in helping professionals and entrepreneurs achieve their goals.">
+    <meta name="keywords" content="Ayman Taher, coach biography, product design, career guidance, professional development">
     <meta name="theme-color" content="#14CF93">
     <link rel="stylesheet" href="../style.css" />
-    <link href="../src/output.css" rel="stylesheet" />
-    <!-- Performance: Preconnect to CDN domains -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-    <!-- Critical CSS -->
-    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- Animate CSS -->
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <!-- Splide CSS with preload -->
     <link
       rel="preload"
@@ -27,6 +28,7 @@
     <!-- AlpineJs with defer for non-blocking -->
     <script
       defer
+      crossorigin
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
@@ -82,12 +84,9 @@
               </div>
 
               <!-- Center Menu -->
-              <div
-                class="m-auto w-[85%] h-[45%] top-20 flex items-center justify-center -translate-y-8 border border-[#232323] rounded-2xl bg-gradient-to-br from-[#0e0e14] to-[#15151f]"
-              >
-                <nav
-                  class="text-center space-y-4 text-white text-xl md:text-2xl font-medium"
-                >
+            <div class="m-auto w-[85%] relative h-[65%] top-20 flex items-center justify-center -translate-y-8
+  border border-[#232323] rounded-2xl  bg-linear-to-br from-[#0e0e14] to-[#15151f]"> 
+            <nav class="text-center space-y-6 text-white text-xl md:text-3xl lg:text-4xl font-medium">
                   <a href="../index.html" class="block hover:text-[#14CF93]"
                     >HOME</a
                   >
@@ -97,10 +96,10 @@
                   <a href="projects.html" class="block hover:text-[#14CF93]"
                     >PROJECTS</a
                   >
-                  <a href="services.html" class="block hover:text-[#14CF93]"
+                  <a href="../index.html#services" class="block hover:text-[#14CF93]"
                     >SERVICES</a
                   >
-                  <a href="academy.html" class="block hover:text-[#14CF93]"
+                  <a href="programs.html" class="block hover:text-[#14CF93]"
                     >ACADEMY</a
                   >
                   <a href="blog.html" class="block hover:text-[#14CF93]"
@@ -265,14 +264,15 @@
    <!-- Image Card -->
     <div
       class="relative rounded-3xl border-[6px] border-[#232323] overflow-hidden
-       w-full h-full"
+       w-full h-[95%]"
     >
-      <img
+      <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
         src="../src/image/ayman1.png"
         alt="hero"
         class="w-full h-full object-fill"
       />
-      <img src="../src/image/ayman.png"
+      <img data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000" 
+      src="../src/image/ayman.png"
         class="w-full top-0 ring-0 h-full object-fill absolute z-10"
       alt="">
 
@@ -287,77 +287,95 @@
   <!-- form -->
   <div class="relative w-full my-1 ">
   
-       <div class="space-y-8">
+       <div class="space-y-4 lg:space-y-8 md:space-y-7 ">
         <input
+         id="nameInput"
           type="text"
           placeholder="Your Name"
-          class="w-full h-15 text-[#3F4551] bg-[#141414] border border-[#2a2a2a] rounded-xl px-4 py-3 outline-none focus:border-emerald-400"
+          class="w-full h-15 text-[#3F4551] bg-[#141414] border border-[#2a2a2a] rounded-xl md:h-[60px]  px-4 py-3 outline-none focus:border-emerald-400"
         />
 
         <input
+        id="phoneInput"
           type="text"
           placeholder="Your Phone"
-          class="w-full h-15 text-[#3F4551] bg-[#141414] border border-[#2a2a2a] rounded-xl px-4 py-3 outline-none focus:border-emerald-400"
+          class="w-full h-15 text-[#3F4551] bg-[#141414] border border-[#2a2a2a] rounded-xl md:h-[60px] px-4 py-3 outline-none focus:border-emerald-400"
         />
         
 
           <input
+          id="emailInput"
           type="email"
           placeholder="Your Email"
-          class="w-full h-15 text-[#3F4551] bg-[#141414] border border-[#2a2a2a] rounded-xl px-4 py-3 outline-none focus:border-emerald-400"
+          class="w-full h-15 text-[#3F4551] bg-[#141414] border border-[#2a2a2a] rounded-xl md:h-[60px] px-4 py-3 outline-none focus:border-emerald-400"
         />
 
           <input
           type="text"
+            id="serviceInput"
           placeholder="Your Service"
-          class="w-full h-15 text-[#3F4551] bg-[#141414] border border-[#2a2a2a] rounded-xl px-4 py-3 outline-none focus:border-emerald-400"
+          class="w-full h-15 text-[#3F4551] bg-[#141414] border border-[#2a2a2a] rounded-xl md:h-[60px] px-4 py-3 outline-none focus:border-emerald-400"
         />
       </div>
 
       <div class="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-4  gap-2 mx-0  my-5 ">
-                  <a class="flex items-center text-center mx-auto" href="#">
-                    <button class="text-xs btn btn-gradient btn-accent  bg-[#14CF93] p-2 md:w-[100px] md:h-[30px] h-[20px] w-[60px] rounded-3xl text-white
+                  <a class="flex items-center text-center mx-auto" >
+                      
+                    <button
+                        onclick="document.getElementById('nameInput').focus()"
+                    class="text-xs btn btn-gradient btn-accent  bg-[#14CF93] p-2 md:w-[100px] md:h-[30px] lg:w-[120px] lg:h-[35px]   h-[20px] w-[60px] rounded-3xl text-white
                     whitespace-nowrap overflow-hidden text-ellipsis
                     ">
                     New Project
-                      <img src="../src/image/plus.svg" alt="plus" class="w-4 h-4 ">
+                      <img src="../src/image/plus.svg" alt="plus" class="w-5 h-4 ">
                     </button>
                   </a>
-                  <a class="flex items-center text-center mx-auto" href="#">
-                    <button class="text-[9px] btn btn-gradient btn-accent  bg-[#14CF93] py-3 px-5   md:w-[115px] md:h-[30px] h-[20px] w-[70px] rounded-3xl text-white
+                  <a class="flex items-center text-center mx-auto" >
+                    <button
+                    onclick="document.getElementById('phoneInput').focus()"
+                    
+                    class="text-[9px] btn btn-gradient btn-accent  bg-[#14CF93] py-3 px-5   md:w-[115px] lg:w-[120px] lg:h-[35px] md:h-[30px] h-[20px] w-[70px] rounded-3xl text-white
                       whitespace-nowrap overflow-hidden text-ellipsis
                     ">
                       Review CV / Portfolio 
-                      <img src="../src/image/plus.svg" alt="plus" class="w-4 h-4 ">
+                      <img src="../src/image/plus.svg" alt="plus" class="w-5 h-5 ">
                     </button>
                   </a>
-                      <a class="flex items-center text-center mx-auto" href="#">
-                    <button class="text-[9px] btn btn-gradient  btn-accent bg-[#14CF93] py-3 px-5  md:w-[115px] md:h-[30px] h-[20px] w-[70px] rounded-3xl text-white
+                      <a class="flex items-center text-center mx-auto" >
+                    <button 
+                    onclick="document.getElementById('emailInput').focus()"
+                    
+                    class="text-[9px] btn btn-gradient  btn-accent bg-[#14CF93] py-3 px-5  md:w-[115px] lg:w-[120px] lg:h-[35px] md:h-[30px] h-[20px] w-[70px] rounded-3xl text-white
                 
                       whitespace-nowrap overflow-hidden text-ellipsis
                     ">
                       Business Consultation
-                      <img src="../src/image/plus.svg" alt="plus" class="w-4 h-4 ">
+                      <img src="../src/image/plus.svg" alt="plus" class="w-5 h-5 ">
                     </button>
                   </a>
-                  <a class="flex items-center text-center mx-auto" href="#">
-                    <button class="text-xs btn btn-gradient btn-accent bg-[#14CF93] p-2 md:w-[100px] md:h-[30px] h-[20px] w-[60px] rounded-3xl text-white
+                  <a class="flex items-center text-center mx-auto" >
+                    <button 
+                    onclick="document.getElementById('serviceInput').focus()"
+                    class="text-xs btn btn-gradient btn-accent bg-[#14CF93] p-2 md:w-[100px] lg:w-[120px] lg:h-[35px] md:h-[30px] h-[20px] w-[60px] rounded-3xl text-white
                     whitespace-nowrap overflow-hidden text-ellipsis
                     ">
                     New Project
-                    <img src="../src/image/plus.svg" alt="plus" class="w-4 h-4 ">
+                    <img src="../src/image/plus.svg" alt="plus" class="w-5 h-5  md:w-4 md:h-4 ">
                     </button>
                   </a>
               
                 </div>
 
             <textarea
+            id="messageInput"
         placeholder="Message"
         rows="4"
         class="w-full h-[26%] bg-[#141414] border border-[#2a2a2a] rounded-xl px-4 py-3 outline-none focus:border-emerald-400"
       ></textarea>
 
-  <button class=" flex items-star md:mb-7 mb-1  mt-4 text-center btn btn-gradient btn-accent w-[160px] h-[45px] rounded-4xl text-white " fdprocessedid="6qmucq">
+      <!-- onclick="document.getElementById('messageInput').focus()" -->
+  <button 
+  class=" flex items-star md:mb-7 mb-1  mt-4 text-center btn btn-gradient btn-accent w-[160px] h-[45px] rounded-4xl text-white " fdprocessedid="6qmucq">
         let’ work together
 </button>  
 </div>
@@ -369,101 +387,121 @@
 
 
            <!-- Start Section Everything   -->
-          <section class="relative max-w-6xl mx-auto px-6 py-24 space-y-12">
-    <!-- Heading -->
-    <div class="text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-semibold">
-        Everything you need to succeed
-      </h2>
-      <p class="text-gray-400 mt-4 text-sm">
-        We've thought of everything so you don't have to. Focus on your vision while we
-handle the rest.
-      </p>
-    </div>
+        <section 
+       class="relative w-[85%] mx-auto my-20 py-20  space-y-12">
+        <!-- Heading -->
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+          class="text-3xl md:text-4xl font-semibold">
+            Everything you need to succeed
+          </h2>
+          <p data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
+          class="text-gray-400 mt-4 text-sm">
+            We've thought of everything so you don't have to. Focus on your
+            vision while we handle the rest.
+          </p>
+        </div>
 
-    <!-- Top Card -->
-    <div
-      class="rounded-2xl p-8 md:p-10
-             bg-white/5 backdrop-blur
-             border border-white/10
-             shadow-[0_0_60px_rgba(0,0,0,0.6)]
-             grid md:grid-cols-2 gap-10 py-12"
-    >
-      <!-- Left -->
-      <div class="text-left">
-        <h3 class="text-3xl md:mt-8 md-1 font-semibold mb-3">
-          Book A consultation
-        </h3>
-        <p class="text-[#F8FAFC]  text-sm leading-relaxed max-w-md">
-          Through systematic, proven methodologies, I guide my clients to develop career growth, financial stability, and personal confidence through structured coaching programs tailored to the unique challenges of the MENA region.
-        </p>
-
-      <button class=" flex items-star md:mb-7 mb-1  mt-2 text-center btn btn-gradient btn-accent w-[160px] h-[50px] rounded-4xl text-white ">
-        View Case Study
-</button>
-      </div>
-
-      <!-- Right (Mock UI) -->
-      <div class="flex justify-center items-center">
-        <div
-          class=" rounded-2xl
-                 items-center justify-center gap-4"
+        <!-- Top Card -->
+        <div  data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+          class="rounded-2xl p-8 md:p-10 bg-white/5 backdrop-blur border border-[#232323] shadow-[0_0_60px_rgba(0,0,0,0.6)] grid md:grid-cols-2 gap-10 py-12"
         >
-          <img src="../src/image/Group1.png" class=" w-full h-full" alt="Group1">
+          <!-- Left -->
+          <div class="text-left">
+            <h3 
+            data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
+            class="text-3xl md:mt-8 md-1 font-semibold mb-3">
+              Book A consultation
+            </h3>
+            <p class="text-[#F8FAFC] text-sm leading-relaxed max-w-md">
+              Through systematic, proven methodologies, I guide my clients to
+              develop career growth, financial stability, and personal
+              confidence through structured coaching programs tailored to the
+              unique challenges of the MENA region.
+            </p>
+
+            <button
+              class="flex items-star md:mb-7 mb-1 mt-2 text-center btn btn-gradient btn-accent w-[160px] h-[50px] rounded-4xl text-white"
+            >
+              View Case Study
+            </button>
+          </div>
+
+          <!-- Right (Mock UI) -->
+          <div 
+           class="flex justify-center items-center">
+            <div class="rounded-2xl border-[#232323] border items-center justify-center gap-4">
+              <img  data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
+                src="../src/image/Group1.png"
+                class="w-full h-full"
+                loading="lazy"
+                alt="Group1"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Bottom Cards -->
-    <div class="grid md:grid-cols-2 gap-8">
+        <!-- Bottom Cards -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Blogs -->
+          <div  data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
+            class="rounded-3xl p-8 bg-white/5 backdrop-blur border border-white/10"
+          >
+            <h4 class="text-2xl text-left font-semibold mb-2">Blogs</h4>
+            <p
+             data-aos-delay="200" data-aos="fade-left" data-aos-duration="1000"
+             class="text-gray-400 text-base mb-6 text-left">
+              Drive alignment and productivity with secure, shared environments
+              for cross-functional work.
+            </p>
 
-      <!-- Blogs -->
-      <div
-        class="rounded-3xl p-8
-               bg-white/5 backdrop-blur
-               border border-white/10"
-      >
-        <h4 class="text-2xl text-left font-semibold mb-2">Blogs</h4>
-        <p class="text-gray-400 text-base mb-6 text-left">
-          Drive alignment and productivity with secure, shared environments for cross-functional work.
-        </p>
+            <div class="rounded-xl mt-8">
+              <img
+                src="../src/image/Group-blogs.png"
+                class="w-full h-full"
+                loading="lazy"
+                alt="Group-blogs"
+              />
+            </div>
+          </div>
 
-        <div class=" rounded-xl  mt-8">
-          <img src="../src/image/Group-blogs.png" class="w-full h-full" alt="Group-blogs">
+          <!-- Podcast -->
+          <div data-aos-delay="200" data-aos="fade-left" data-aos-duration="1000"
+            class="rounded-3xl p-8 bg-white/5 backdrop-blur border border-white/10"
+          >
+            <h4 class="text-2xl text-left font-semibold mb-2">
+              Podcast – حروف بودكاست
+            </h4>
+            <p data-aos-delay="200" data-aos="fade-left" data-aos-duration="1000"
+             class="text-gray-400 text-base text-left mb-6">
+              Drive alignment and productivity with secure shared environments.
+            </p>
+
+            <div class="rounded-xl">
+              <img
+                src="../src/image/Group-podcast.png"
+                class="w-full h-full"
+                loading="lazy"
+                alt="Group-podcast"
+              />
+              <img
+                src="../src/image/Group-play.png"
+                class="w-52 items-center mx-auto"
+                loading="lazy"
+                alt="Group-play"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-
-      <!-- Podcast -->
-      <div
-        class="rounded-3xl p-8
-               bg-white/5 backdrop-blur
-               border border-white/10"
-      >
-        <h4 class="text-2xl text-left font-semibold mb-2">
-          Podcast – حروف بودكاست
-        </h4>
-        <p class="text-gray-400 text-base text-left mb-6">
-          Drive alignment and productivity with secure shared environments.
-        </p>
-
-        <div class=" rounded-xl">
-          <img src="../src/image/Group-podcast.png" class="w-full h-full" alt="Group-podcast">
-          <img src="../src/image/Group-play.png" class=" w-52 items-center mx-auto" alt="Group-play">
-        </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+      </section>
        <!-- End Section  Everything -->
-
 
     </main>
     <!-- Start Footer -->
       <footer x-data="{ open: false }" class="w-full">
-    <hr  />
+     <hr class="my-10" />
   <!-- Desktop Footer -->
-  <div class="hidden md:flex max-w-7xl mx-auto px-6 py-6 items-center justify-between">
+  <div class="hidden md:flex mx-auto px-6 py-6 items-center justify-between">
     <!-- Logo -->
     <div class="flex items-center gap-2 w-40 text-lg font-medium">
       <img src="../src/image/logo-bottom.png" class="w-full h-full" alt="logo-bottom">
@@ -474,21 +512,45 @@ handle the rest.
       <a href="../index.html" class="hover:text-white transition">Home</a>
       <a href="#" class="hover:text-white transition">About</a>
       <a href="academy.html" class="hover:text-white transition">Academy</a>
-      <a href="services.html" class="hover:text-white transition">Services</a>
+      <a href="../index.html#services" class="hover:text-white transition">Services</a>
       <a href="contact.html" class="hover:text-white transition">Contact</a>
       <a href="blog.html" class="hover:text-white transition">Blog</a>
       <a href="projects.html" class="hover:text-white transition">Projects</a>
     </nav>
 
     <!-- Right action -->
-    <div class="flex items-center gap-4">
-      <span class="text-xs text-gray-500">
-        © 2025 Ayman Taher
-      </span>
-      <button class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center hover:bg-emerald-400 transition">
-        <img src="../src/image/plus.svg" class="w-9" alt="plus">
-      </button>
+    
+   <div class="flex items-center gap-2">
+  <span class="text-xs text-gray-500 mx-6"> © 2025 Ayman Taher </span>
+
+  <div x-data="{ open: false }" class="relative flex flex-col items-center gap-2 z-50">
+
+    <!-- Dropdown Buttons  -->
+    <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2">
+      <a href="https://api.whatsapp.com/send/?phone=966543211714 " target="_blank"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition ">
+        <img width="38" src="https://img.icons8.com/fluency/48/whatsapp.png" alt="whatsapp"/>
+      </a>
+
+      <a href="mailto:welcome@aymantaher.com"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition"
+         target="_blank">
+        <img width="30" src="https://img.icons8.com/ios/50/mail.png" alt="mail"/>
+      </a>
     </div>
+
+    <!-- Main Button -->
+    <button 
+      @click="open = !open"
+      :class="open ? 'bg-emerald-400' : 'bg-emerald-500'"
+      class="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-emerald-400 transition"
+    >
+      <img src="../src/image/plus.svg" class="w-9" alt="plus" />
+    </button>
+
+  </div>
+</div>
+
   </div>
 
   <!-- Mobile Footer / Menu Button -->
@@ -523,7 +585,7 @@ handle the rest.
               <a href="../index.html" class="block text-[#14CF93]">HOME</a>
               <a href="about.html" class="block hover:text-[#14CF93]">ABOUT</a>
               <a href="projects.html" class="block hover:text-[#14CF93]">PROJECTS</a>
-              <a href="services.html" class="block hover:text-[#14CF93]">SERVICES</a>
+              <a href="../index.html#services" class="block hover:text-[#14CF93]">SERVICES</a>
               <a href="academy.html" class="block hover:text-[#14CF93]">ACADEMY</a>
               <a href="blog.html" class="block hover:text-[#14CF93]">BLOGS & NEWS</a>
               <a href="contact.html" class="block hover:text-[#14CF93]">CONTACT</a>
@@ -561,5 +623,7 @@ handle the rest.
     <script defer src="node_modules/flyonui/flyonui.js"></script>
     <!--script  -->
     <script defer src="../script.js"></script>
+       <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  
   </body>
 </html>

@@ -4,32 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLOGS & NEWS Page</title>
-    <meta
-      name="description"
-      content="Read insights and articles on career development, design trends, financial planning, and professional growth. Stay updated with our latest blog posts and news."
-    />
-    <meta
-      name="keywords"
-      content="blog, articles, insights, career tips, design trends, professional development, news"
-    />
-    <meta name="theme-color" content="#14CF93" />
+    <meta name="description" content="Learn about Ayman Taher's journey as a Product Design Lead and coach. Discover his mission, values, and expertise in helping professionals and entrepreneurs achieve their goals.">
+    <meta name="keywords" content="Ayman Taher, coach biography, product design, career guidance, professional development">
+    <meta name="theme-color" content="#14CF93">
     <link rel="stylesheet" href="../style.css" />
-    <link href="../src/output.css" rel="stylesheet" />
-    <!-- Performance: Preconnect to CDN domains -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
-    <!-- Critical CSS -->
-    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- Animate CSS -->
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <!-- Splide CSS with preload -->
     <link
       rel="preload"
       as="style"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    />
-    <!-- Font -->
-    <link
-      rel="stylesheet"
-      href="../src/fonts/fonnts.com-Degular_Variable.otf"
     />
     <link
       rel="stylesheet"
@@ -38,6 +28,7 @@
     <!-- AlpineJs with defer for non-blocking -->
     <script
       defer
+      crossorigin
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
@@ -93,12 +84,9 @@
               </div>
 
               <!-- Center Menu -->
-              <div
-                class="m-auto w-[85%] h-[45%] top-20 flex items-center justify-center -translate-y-8 border border-[#232323] rounded-2xl bg-gradient-to-br from-[#0e0e14] to-[#15151f]"
-              >
-                <nav
-                  class="text-center space-y-4 text-white text-xl md:text-2xl font-medium"
-                >
+              <div class="m-auto w-[85%] relative h-[65%] top-20 flex items-center justify-center -translate-y-8
+  border border-[#232323] rounded-2xl  bg-linear-to-br from-[#0e0e14] to-[#15151f]"> 
+            <nav class="text-center space-y-6 text-white text-xl md:text-3xl lg:text-4xl font-medium">
                   <a href="../index.html" class="block hover:text-[#14CF93]"
                     >HOME</a
                   >
@@ -109,11 +97,11 @@
                     >PROJECTS</a
                   >
                   <a
-                    href="services.html"
+                    href="../index.html#services"
                     class="block hover:text-[#14CF93]text-[#14CF93]"
                     >SERVICES</a
                   >
-                  <a href="academy.html" class="block hover:text-[#14CF93]"
+                  <a href="programs.html" class="block hover:text-[#14CF93]"
                     >ACADEMY</a
                   >
                   <a href="blog.html" class="block text-[#14CF93]"
@@ -202,15 +190,15 @@
             Resrources
           </button>
         </div>
-        <div class="cards grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="cards grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8" >
           <!-- Blog Card -->
           <div
-            class="card-blogs p-3 !bg-transparent border !border-white rounded-3xl"
+            class="card-blogs p-3 !bg-transparent  rounded-3xl"
           >
             <a href="blog-details.html">
-              <img
+              <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="../src/image/Frame-blogs.png"
-                class="p-2"
+                class="p-2 w-full"
                 alt="Course1"
               />
               <h4 class="text-xl md:mx-5 mx-2 font-bold text-left my-2">
@@ -228,12 +216,12 @@
           </div>
           <!-- Blog Card -->
           <div
-            class="card-blogs p-3 !bg-transparent border !border-white rounded-3xl"
+            class="card-blogs p-3 !bg-transparent  rounded-3xl"
           >
             <a href="blog-details.html">
-              <img
+              <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="../src/image/Frame-blogs.png"
-                class="p-2"
+                class="p-2 w-full"
                 alt="Course1"
               />
               <h4 class="text-xl md:mx-5 mx-2 font-bold text-left my-2">
@@ -251,12 +239,12 @@
           </div>
           <!-- Blog Card -->
           <div
-            class="card-blogs p-3 !bg-transparent border !border-white rounded-3xl"
+            class="card-blogs p-3 !bg-transparent rounded-3xl"
           >
             <a href="blog-details.html">
-              <img
+              <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="../src/image/Frame-blogs.png"
-                class="p-2"
+                class="p-2 w-full"
                 alt="Course1"
               />
               <h4 class="text-xl md:mx-5 mx-2 font-bold text-left my-2">
@@ -274,12 +262,12 @@
           </div>
           <!-- Blog Card -->
           <div
-            class="card-blogs p-3 !bg-transparent border !border-white rounded-3xl"
+            class="card-blogs p-3 !bg-transparent rounded-3xl"
           >
             <a href="blog-details.html">
-              <img
+              <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="../src/image/Frame-blogs.png"
-                class="p-2"
+                class="p-2 w-full"
                 alt="Course1"
               />
               <h4 class="text-xl md:mx-5 mx-2 font-bold text-left my-2">
@@ -297,12 +285,12 @@
           </div>
           <!-- Blog Card -->
           <div
-            class="card-blogs p-3 !bg-transparent border !border-white rounded-3xl"
+            class="card-blogs p-3 !bg-transparent rounded-3xl"
           >
             <a href="blog-details.html">
-              <img
+              <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="../src/image/Frame-blogs.png"
-                class="p-2"
+                class="p-2 w-full"
                 alt="Course1"
               />
               <h4 class="text-xl md:mx-5 mx-2 font-bold text-left my-2">
@@ -320,12 +308,12 @@
           </div>
           <!-- Blog Card -->
           <div
-            class="card-blogs p-3 !bg-transparent border !border-white rounded-3xl"
+            class="card-blogs p-3 !bg-transparent rounded-3xl"
           >
             <a href="blog-details.html">
-              <img
+              <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="../src/image/Frame-blogs.png"
-                class="p-2"
+                class="p-2 w-full"
                 alt="Course1"
               />
               <h4 class="text-xl md:mx-5 mx-2 font-bold text-left my-2">
@@ -343,12 +331,12 @@
           </div>
           <!-- Blog Card -->
           <div
-            class="card-blogs p-3 !bg-transparent border !border-white rounded-3xl"
+            class="card-blogs p-3 !bg-transparent  rounded-3xl"
           >
             <a href="blog-details.html">
-              <img
+              <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="../src/image/Frame-blogs.png"
-                class="p-2"
+                class="p-2 w-full"
                 alt="Course1"
               />
               <h4 class="text-xl md:mx-5 mx-2 font-bold text-left my-2">
@@ -366,12 +354,12 @@
           </div>
           <!-- Blog Card -->
           <div
-            class="card-blogs p-3 !bg-transparent border !border-white rounded-3xl"
+            class="card-blogs p-3 !bg-transparent  rounded-3xl"
           >
             <a href="blog-details.html">
-              <img
+              <img data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="../src/image/Frame-blogs.png"
-                class="p-2"
+                class="p-2 w-full"
                 alt="Course1"
               />
               <h4 class="text-xl md:mx-5 mx-2 font-bold text-left my-2">
@@ -390,14 +378,15 @@
         </div>
       </section>
       <!-- End Section Latest Activites -->
-      <!-- start Section communication Shots -->
-      <section id="communication" class="w-[85%] md:py-18 py-8 mx-auto mt-10">
+       <!-- start Section communication Shots -->
+    <section data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
+       id="communication" class="w-[85%] md:py-24 py-8 mx-auto mt-32">
         <div
           class="flex flex-col md:flex-row md:justify-between gap-8 md:gap-12 py-6 px-8 bg-[#171717] rounded-2xl"
         >
           <!-- item left -->
           <div class="flex flex-col md:flex-col text-left md:w-[35%]">
-            <h1
+            <h1 data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
               class="text-2xl md:text-4xl font-bold py-2 md:mb-2 leading-snug"
             >
               Let’s start something<br class="md:hidden" />
@@ -407,13 +396,13 @@
               Say hi to me or do you want to get started with your project and
               you need my help? Feel free to contact me.
             </p>
-            <div class="flex flex-col sm:flex-row gap-3 mt-4">
-              <button
+            <div class="flex flex-col md:flex-row gap-3 mt-4">
+              <button data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
                 class="text-center btn btn-gradient btn-accent w-full md:w-[160px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-white"
               >
                 Talk with me
               </button>
-              <button
+              <button data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
                 class="text-center btn btn-gradient btn-accent w-full md:w-[220px] md:h-[50px] w-[160px] h-[50px] rounded-4xl text-black border !border-white !bg-white"
               >
                 Book Appointment
@@ -422,60 +411,62 @@
           </div>
 
           <!-- item right -->
-          <div class="flex flex-col gap-4 md:w-[40%] p-4 sm:p-8">
-            <a
+          <div class="flex flex-col gap-4 md:w-[40%]  lg:w-[30%] p-4 sm:p-8">
+            <a data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
               href="#"
               class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
             >
-              <div
+              <div data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
                 class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center"
               >
                 <img
                   src="../src/image/Envelope.svg"
                   class="w-6 h-6"
+                  loading="lazy"
                   alt="Envelope"
                 />
               </div>
               <span class="flex flex-col text-left">
-                <p class="text-sm sm:text-base text-gray-400">Chat with me</p>
-                <p class="text-lg sm:text-2xl font-medium">kevin.gilbert.com</p>
+                <p class="text-sm  sm:text-base text-gray-400">Chat with me</p>
+                <p class="text-lg text-[14px] lg:text-xl  font-medium">kevin.gilbert.com</p>
               </span>
             </a>
 
-            <a
+            <a data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
               href="#"
               class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
             >
-              <div
+              <div  data-aos-delay="200" data-aos="zoom-in" data-aos-duration="100"
                 class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center"
               >
                 <img
                   src="../src/image/PhoneCall.svg"
                   class="w-6 h-6"
+                  loading="lazy"
                   alt="PhoneCall"
                 />
               </div>
               <span class="flex flex-col text-left">
-                <p class="text-sm sm:text-base text-gray-400">Call Me</p>
-                <p class="text-lg sm:text-2xl font-medium">+1-202-555-0190</p>
+                <p class="md:text-[14px] text-[12px] sm:text-base text-gray-400">Call Me</p>
+                <p class="text-lg text-[14px]  lg:text-xl font-medium">+1-202-555-0190</p>
               </span>
             </a>
           </div>
         </div>
       </section>
-      <!-- End Section communication Shots -->
+        <!-- End Section communication Shots -->
     </main>
     <!-- Start Footer -->
     <footer x-data="{ open: false }" class="w-full">
       <hr />
       <!-- Desktop Footer -->
       <div
-        class="hidden md:flex max-w-7xl mx-auto px-6 py-6 items-center justify-between"
+        class="hidden md:flex  mx-auto px-6 py-6 items-center justify-between"
       >
         <!-- Logo -->
         <div class="flex items-center gap-2 w-40 text-lg font-medium">
           <img
-            src="src/image/logo-bottom.png"
+            src="../src/image/logo-bottom.png"
             class="w-full h-full"
             alt="logo-bottom"
           />
@@ -485,8 +476,8 @@
         <nav class="flex gap-8 text-base text-gray-400">
           <a href="../index.html" class="hover:text-white transition">Home</a>
           <a href="#" class="hover:text-white transition">About</a>
-          <a href="academy.html" class="hover:text-white transition">Academy</a>
-          <a href="services.html" class="hover:text-white transition"
+          <a href="programs.html" class="hover:text-white transition">Academy</a>
+          <a href="../index.html#services" class="hover:text-white transition"
             >Services</a
           >
           <a href="contact.html" class="hover:text-white transition">Contact</a>
@@ -497,20 +488,44 @@
         </nav>
 
         <!-- Right action -->
-        <div class="flex items-center gap-4">
-          <span class="text-xs text-gray-500"> © 2025 Ayman Taher </span>
-          <button
-            class="w-10 h-10 rounded-full bg-emerald-500 flex items-center justify-center hover:bg-emerald-400 transition"
-          >
-            <img src="src/image/plus.svg" class="w-9" alt="plus" />
-          </button>
-        </div>
+     
+   <div class="flex items-center gap-2">
+  <span class="text-xs text-gray-500 mx-6"> © 2025 Ayman Taher </span>
+
+  <div x-data="{ open: false }" class="relative flex flex-col items-center gap-2 z-50">
+
+    <!-- Dropdown Buttons  -->
+    <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2">
+      <a href="https://api.whatsapp.com/send/?phone=966543211714 " target="_blank"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition ">
+        <img width="38" src="https://img.icons8.com/fluency/48/whatsapp.png" alt="whatsapp"/>
+      </a>
+
+      <a href="mailto:welcome@aymantaher.com"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition"
+         target="_blank">
+        <img width="30" src="https://img.icons8.com/ios/50/mail.png" alt="mail"/>
+      </a>
+    </div>
+
+    <!-- Main Button -->
+    <button 
+      @click="open = !open"
+      :class="open ? 'bg-emerald-400' : 'bg-emerald-500'"
+      class="w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-emerald-400 transition"
+    >
+      <img src="../src/image/plus.svg" class="w-9" alt="plus" />
+    </button>
+
+  </div>
+</div>
+
       </div>
 
       <!-- Mobile Footer / Menu Button -->
       <div class="flex md:hidden justify-between items-center px-6 py-4">
         <!-- Logo -->
-        <img src="src/image/logo-bottom.png" alt="logo" class="w-45" />
+        <img src="../src/image/logo-bottom.png" alt="logo" class="w-45" />
 
         <!-- Menu Button -->
         <button @click="open = true">
@@ -544,10 +559,10 @@
               <a href="projects.html" class="block hover:text-[#14CF93]"
                 >PROJECTS</a
               >
-              <a href="services.html" class="block hover:text-[#14CF93]"
+              <a href="../index.html#services" class="block hover:text-[#14CF93]"
                 >SERVICES</a
               >
-              <a href="academy.html" class="block hover:text-[#14CF93]"
+              <a href="programs.html" class="block hover:text-[#14CF93]"
                 >ACADEMY</a
               >
               <a href="blog.html" class="block hover:text-[#14CF93]"
@@ -560,7 +575,7 @@
           </div>
 
           <!-- Bottom Buttons & Social -->
-          <div class="flex flex-col items-center gap-4 mt-auto mb-12 px-6">
+          <div class="flex flex-col items-center gap-4 mt-30 mb-12 px-6">
             <div class="flex gap-3">
               <a
                 href="#"
@@ -608,5 +623,7 @@
     <script defer src="node_modules/flyonui/flyonui.js"></script>
     <!--script  -->
     <script defer src="../script.js"></script>
+            <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  
   </body>
 </html>

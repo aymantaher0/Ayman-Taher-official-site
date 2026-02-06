@@ -239,7 +239,7 @@ hr {
     img {
       margin-top: 5rem;
       margin-bottom: 5rem;
-    }
+    
   }
   .description-consultation p {
     padding: 0rem 6.5rem;
@@ -275,4 +275,9 @@ hr {
   .h-card {
     height: 12rem;
   }
+}
+}
+
+.card-blogs {
+  border: 0.3px solid #a1aebf !important
 }

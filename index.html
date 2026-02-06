@@ -97,13 +97,10 @@
                 </a>
               </div>
 
-              <!-- Center Menu -->
-              <div
-                class="m-auto w-[85%] h-[45%] top-20 flex items-center justify-center -translate-y-8 border border-[#232323] rounded-2xl bg-gradient-to-br from-[#0e0e14] to-[#15151f]"
-              >
-                <nav
-                  class="text-center space-y-4 text-white text-xl md:text-2xl font-medium"
-                >
+             <!-- Center Menu -->
+            <div class="m-auto w-[85%] relative h-[65%] top-20 flex items-center justify-center -translate-y-8
+  border border-[#232323] rounded-2xl  bg-linear-to-br from-[#0e0e14] to-[#15151f]"> 
+            <nav class="text-center space-y-6 text-white text-xl md:text-3xl lg:text-4xl font-medium">
                   <a href="#hero" class="block text-[#14CF93]">HOME</a>
                   <a href="layer/about.html" class="block hover:text-[#14CF93]"
                     >ABOUT</a
@@ -114,12 +111,12 @@
                     >PROJECTS</a
                   >
                   <a
-                    href="layer/services.html"
+                    href="#services"
                     class="block hover:text-[#14CF93]"
                     >SERVICES</a
                   >
                   <a
-                    href="layer/academy.html"
+                    href="layer/programs.html"
                     class="block hover:text-[#14CF93]"
                     >ACADEMY</a
                   >
@@ -646,19 +643,20 @@
       </section>
       <!--End Section PROJECTS -->
       <!-- Start Section Solution   -->
-      <section  data-aos="fade-up" id="solution " class="w-[85%] md:py-24 py-4 mx-auto  ">
+      <section id="services"    
+       data-aos="fade-up" id="solution " class="w-[85%] md:py-24 py-4 mx-auto  ">
         <div
-          class="text-solution flex flex-col my-4 md:flex-row gap-7 lg:justify-between lg:mx-0 lg:px-0 lg:gap-12 lg:w-full px-6 py-4 align-center justify-center"
+          class="text-solution flex flex-col my-4 md:flex-row  relative md:left-6 lg:justify-between lg:mx-0 lg:px-0 lg:gap-12 lg:w-full px-6 py-4 align-center justify-center"
         >
-          <div>
+          <div >
             <h1 data-aos="fade-down" class="text-[#FFFFFF] text-left text-sm">Service</h1>
             <h1 data-aos="fade-down"
-              class="text-[#FFFFFF] md:text-4xl text-2xl lg:text-5xl font-bold whitespace-nowrap"
+              class="text-[#FFFFFF] md:text-4xl  text-2xl lg:text-5xl font-bold whitespace-nowrap"
             >
               Solution we provide
             </h1>
           </div>
-          <div class="text-left text-[#999]">
+          <div class="text-left text-[#999] lg:ml-7  relative md:w-full ">
             <p>
               With every single one of our clients we bring forth a deep passion
               for creative problem solving innovations forward thinking brands
@@ -889,7 +887,7 @@
       <section  
        id="colors"></section>
       <!-- Start Section Latest Activites -->
-      <section
+      <section 
       data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
       id="latest" class="w-[85%] mx-auto md:mt-32 mt-16 z-20 relative">
         <h2 class="text-center md:text-4xl text-3xl font-semibold mb-12">
@@ -931,7 +929,7 @@
       <!-- End Section Latest Activites -->
       <!-- Start Section Everything   -->
       <section 
-       class="relative w-[85%] mx-auto px-6 py-24 space-y-12">
+       class="relative w-[85%] mx-auto py-24 space-y-12">
         <!-- Heading -->
         <div class="text-center max-w-2xl mx-auto">
           <h2 class="text-3xl md:text-4xl font-semibold">
@@ -1147,7 +1145,7 @@
       <hr />
       <!-- Desktop Footer -->
       <div 
-        class="hidden md:flex  mx-auto px-6 py-6 items-center justify-between"
+        class="hidden md:flex mx-auto px-6 py-6 items-center justify-between"
       >
         <!-- Logo -->
         <div class="flex items-center gap-2 w-40 text-lg font-medium">
@@ -1164,10 +1162,10 @@
           <a href="layer/about.html" class="hover:text-white transition"
             >About</a
           >
-          <a href="layer/academy.html" class="hover:text-white transition"
+          <a href="layer/programs.html" class="hover:text-white transition"
             >Academy</a
           >
-          <a href="layer/services.html" class="hover:text-white transition"
+          <a href="#services" class="hover:text-white transition"
             >Services</a
           >
           <a href="layer/contact.html" class="hover:text-white transition"
@@ -1182,19 +1180,19 @@
         <!-- Right action -->
 
    <div class="flex items-center gap-2">
-  <span class="text-xs text-gray-500 mx-4"> © 2025 Ayman Taher </span>
+  <span class="text-xs text-gray-500 mx-6"> © 2025 Ayman Taher </span>
 
-  <div x-data="{ open: false }" class="flex flex-col items-center gap-2 z-50">
+  <div x-data="{ open: false }" class="relative flex flex-col items-center gap-2 z-50">
 
     <!-- Dropdown Buttons (فوق الزر) -->
-    <div x-show="open" x-transition class="flex flex-col gap-2 mb-2">
-      <a href="https://api.whatsapp.com/send/?phone=966543211714" target="_blank"
-         class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:bg-green-400 transition">
+    <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2">
+      <a href="https://api.whatsapp.com/send/?phone=966543211714 " target="_blank"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition ">
         <img width="38" src="https://img.icons8.com/fluency/48/whatsapp.png" alt="whatsapp"/>
       </a>
 
       <a href="mailto:welcome@aymantaher.com"
-         class="w-12 h-12 rounded-full bg-gray-500 flex items-center justify-center shadow-lg hover:bg-gray-400 transition"
+         class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition"
          target="_blank">
         <img width="30" src="https://img.icons8.com/ios/50/mail.png" alt="mail"/>
       </a>
@@ -1254,10 +1252,10 @@
               <a href="layer/projects.html" class="block hover:text-[#14CF93]"
                 >PROJECTS</a
               >
-              <a href="layer/services.html" class="block hover:text-[#14CF93]"
+              <a href="#services" class="block hover:text-[#14CF93]"
                 >SERVICES</a
               >
-              <a href="layer/academy.html" class="block hover:text-[#14CF93]"
+              <a href="layer/programs.html" class="block hover:text-[#14CF93]"
                 >ACADEMY</a
               >
               <a href="layer/blog.html" class="block hover:text-[#14CF93]"
@@ -1313,11 +1311,11 @@
     </footer>
 
     <!-- End Footer  -->
-    <!--  -->
     <!-- FlyOnUI - defer to avoid render blocking -->
     <script defer src="node_modules/flyonui/flyonui.js"></script>
     <!--script  -->
     <script defer src="script.js"></script>
+        <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  
   </body>
 </html>
