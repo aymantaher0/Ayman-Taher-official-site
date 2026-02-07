@@ -1113,7 +1113,7 @@
 
             <a
               href="#"
-              class="flex items-center gap-4 py-4 px-4 border border-white/[0.07] rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
+              class="flex items-center gap-4 py-4 px-4  border border-second  rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
             >
               <div
                 class="icon flex-shrink-0 w-12 h-12 bg-[#3C3C3C] rounded-xl flex items-center justify-center"
@@ -1176,11 +1176,13 @@
         <!-- Right action -->
 
    <div class="flex items-center gap-2">
-  <span class="text-xs text-gray-500 mx-6"> © 2025 Ayman Taher </span>
+  <span class="text-xs text-gray-500 md:mx-14 mx-8 relative "> © 2025 Ayman Taher </span>
 
-  <div x-data="{ open: false }" class="relative flex flex-col items-center gap-2 z-50">
+  <div x-data="{ open: false }" class=" fixed bottom-4 
+   animate-[float-y_1.5s_ease-in-out_infinite]
+  right-4 flex flex-col items-center gap-2 z-50">
 
-    <!-- Dropdown Buttons (فوق الزر) -->
+    <!-- Dropdown Buttons  -->
     <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2">
       <a href="https://api.whatsapp.com/send/?phone=966543211714 " target="_blank"
          class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition ">

@@ -460,11 +460,14 @@
         </nav>
 
         <!-- Right action -->
-      
+ 
    <div class="flex items-center gap-2">
-  <span class="text-xs text-gray-500 mx-6"> © 2025 Ayman Taher </span>
+   <span class="text-xs text-gray-500 md:mx-14 mx-8 relative "> © 2025 Ayman Taher </span>
 
-  <div x-data="{ open: false }" class="relative flex flex-col items-center gap-2 z-50">
+   <div x-data="{ open: false }" class=" fixed bottom-4 
+   animate-[float-y_1.5s_ease-in-out_infinite]
+  right-4 flex flex-col items-center gap-2 z-50">
+
 
     <!-- Dropdown Buttons  -->
     <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2">
@@ -491,6 +494,7 @@
 
   </div>
 </div>
+
 
 
       </div>
