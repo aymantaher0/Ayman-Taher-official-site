@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Transform your career and financial life with personalized coaching. 3 & 6 Month Programs for Growth, Stability & Identity."
@@ -11,13 +11,14 @@
       name="keywords"
       content="career coaching, financial planning, personal development, career guidance"
     />
-
+  <!-- normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <meta name="theme-color" content="#14CF93" />
     <title>Home Page - Ayman Taher Coaching</title>
     <!-- Critical CSS - Inline for faster rendering -->
     <link href="dist/output.css" rel="stylesheet" />
     <!-- File CSS Main -->
-     <link rel="stylesheet" href="style.css">
+     <link href="style.css" rel="stylesheet">
     <!-- Performance: Preconnect to CDN domains -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
@@ -72,11 +73,11 @@
           <div
             x-show="open"
             x-transition.opacity
-            class="fixed inset-0 bg-gradient-to-br from-[#0e0e14] to-[#15151f] z-50 flex items-center justify-center"
+            class="fixed inset-0 bg-gradient z-50 flex items-center justify-center"
           >
             <!-- Box -->
             <div
-              class="relative w-full h-full bg-gradient-to-br from-[#0e0e14] to-[#15151f] p-10 flex flex-col"
+              class="relative w-full h-full bg-gradient p-10 flex flex-col"
             >
               <!-- Top Bar -->
               <div
@@ -370,14 +371,14 @@
           <h2 class="text-4xl font-bold">Latest case studies</h2>
         </div>
         <!-- cards -->
-        <div class="cards flex flex-col" x-data="{ showAll: false }">
+        <div class="cards flex flex-col " x-data="{ showAll: false }">
           <!-- Card -->
           <div
-            class="card flex flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden"
+            class="card flex flex-row md:flex-col md:my-4 my-2 md:flex-row w-full bg-black border-second overflow-hidden"
           >
             <!--Text-->
             <div data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000"
-              class="card-text md:w-1/2 w-full m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left"
+              class="card-text w-1/2 m-1 md:m-4 md:py-6 py-1 md:px-4 px-1 text-white text-left"
             >
               <span class="flex flex-row items-center">
                 <img  
@@ -403,7 +404,7 @@
               >
                 <a href="layer/project-details.html"> View Case Study </a>
                 <img
-                  src="../src/image/Arrowbut.svg"
+                  src="src/image/Arrowbut.svg"
                   alt="Arrowbut"
                   loading="lazy"
                 />
@@ -411,7 +412,7 @@
             </div>
 
             <!-- Img   -->
-            <div class="card-img md:w-1/2 w-full h-64 md:h-auto p-0 mt-2">
+            <div class="card-img w-1/2  p-0 mt-2">
               <img  data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
                 src="src/image/card1.png"
                 alt="card"
@@ -452,7 +453,7 @@
               >
                 <a href="layer/project-details.html"> View Case Study </a>
                 <img
-                  src="../src/image/Arrowbut.svg"
+                  src="src/image/Arrowbut.svg"
                   alt="Arrowbut"
                   loading="lazy"
                 />
@@ -501,7 +502,7 @@
               >
                 <a href="layer/project-details.html"> View Case Study </a>
                 <img
-                  src="../src/image/Arrowbut.svg"
+                  src="src/image/Arrowbut.svg"
                   alt="Arrowbut"
                   loading="lazy"
                 />
@@ -561,7 +562,7 @@
                 >
                   <a href="layer/project-details.html"> View Case Study </a>
                   <img
-                    src="../src/image/Arrowbut.svg"
+                    src="src/image/Arrowbut.svg"
                     alt="Arrowbut"
                     loading="lazy"
                   />
@@ -609,7 +610,7 @@
                 >
                   <a href="layer/project-details.html"> View Case Study </a>
                   <img
-                    src="../src/image/Arrowbut.svg"
+                    src="src/image/Arrowbut.svg"
                     alt="Arrowbut"
                     loading="lazy"
                   />
@@ -628,7 +629,7 @@
           </div>
           <button
             @click="showAll = !showAll"
-            class="flex items-center my-6 text-center btn border-second w-full h-[60px] rounded-full text-[#14CF93] bg-gradient-to-r from-[#2E2E2E] via-[#1d1d1d] to-[#000000]"
+            class="flex items-center my-6 text-center btn border-second w-full h-[60px] rounded-full text-[#14CF93] bg-gradient"
           >
             <span
               x-text="showAll ? 'Show Less Projects' : 'View All Projects'"
@@ -1225,7 +1226,7 @@
         <div
           x-show="open"
           x-transition.opacity
-          class="fixed inset-0 z-50 bg-gradient-to-br from-[#0e0e14] to-[#15151f] flex flex-col"
+          class="fixed inset-0 z-50 flex flex-col"
         >
           <!-- Top Bar -->
           <div class="flex justify-between items-center p-6">
@@ -1238,7 +1239,7 @@
           <!-- Navigation -->
 
           <div
-            class="m-auto w-[85%] h-[45%] top-20 flex items-center justify-center -translate-y-8 border border-[#232323] rounded-2xl bg-gradient-to-br from-[#0e0e14] to-[#15151f]"
+            class="m-auto w-[85%] h-[45%] top-20 flex items-center justify-center -translate-y-8 border border-[#232323] rounded-2xl bg-gradient"
           >
             <nav
               class="text-center space-y-4 text-white text-xl md:text-2xl font-medium"

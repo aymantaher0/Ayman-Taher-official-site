@@ -7,8 +7,8 @@
     <meta name="description" content="Learn about Ayman Taher's journey as a Product Design Lead and coach. Discover his mission, values, and expertise in helping professionals and entrepreneurs achieve their goals.">
     <meta name="keywords" content="Ayman Taher, coach biography, product design, career guidance, professional development">
     <meta name="theme-color" content="#14CF93">
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../dist/output.css" />
+<link rel="stylesheet" href="../dist/output.css" />
+<link rel="stylesheet" href="../style.css" />
     <!-- Animate CSS -->
    <link
   rel="stylesheet"
@@ -32,13 +32,13 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Start Page Header  -->
-    <header class="w-full p-4 relative z-50">
-  <div class="mx-6 flex items-center justify-between">
+    <header class="w-full p-2 md:p-4 lg:p-5 sm:p-3 relative z-50">
+  <div class="md:mx-6 sm:mx-6 mx-2 flex items-center justify-between">
     
     <!-- Logo -->
-    <img src="../src/image/logo.png" alt="logo" class="" />
+    <img src="../src/image/logo.png" alt="logo" class="sm:w-10 w-10 cursor-pointer md:w-16 lg:w-20 " />
 
     <!-- Menu -->
     <div 
@@ -49,40 +49,39 @@
 
       <!-- Menu Button -->
       <button @click="open = true">
-        <img src="../src/image/menu.png" class="md:ml-12" alt="menu">
+        <img src="../src/image/menu.png" class="md:ml-12 sm:w-16 w-16 cursor-pointer md:w-16 lg:w-20" alt="menu">
       </button>
 
       <!-- FULL SCREEN MENU -->
       <div
         x-show="open"
         x-transition.opacity
-        class="fixed inset-0 bg-gradient-to-br from-[#0e0e14] to-[#15151f] z-50 flex items-center justify-center"
+        class="fixed inset-0 bg-gradient z-50 flex items-center justify-center"
       >
 
         <!-- Box -->
         <div
-          class="relative w-full h-full 
-
-             bg-gradient-to-br from-[#0e0e14] to-[#15151f]
-             p-10 flex flex-col"
+          class="nav-box relative w-full h-full 
+          
+             md:p-10 sm:p-6 p-1 pt-0 flex flex-col"
         >
-
+        
           <!-- Top Bar -->
-          <div class="flex items-center md:mx-24 mx-auto md:gap-0 gap-6 justify-between">
-            <img src="../src/image/logo.png" class="" alt="logo">
+          <div class="flex items-center md:mx-24 sm:mx-12 mx-10 my-4 sm:my-0 mx-auto md:gap-0 gap-6 justify-between">
+            <img src="../src/image/logo.png" class="md:w-20 w-10" alt="logo">
 
             <button @click="open = false" class="text-white text-xl">
-              <img src="../src/image/menu.png" class="md:ml-20" alt="menu">
+              <img src="../src/image/menu.png" class="md:ml-20 md:w-20 w-16 " alt="menu">
             </button>
 
           <a class=" flex items-center text-center " href="#" > <button class="btn btn-gradient btn-accent bg-[#14CF93] md:w-[235px] md:h-[45px] h-[30px] w-[180px] rounded-3xl text-white">       Book A Consultation</button>
           </a>
           </div>
-
+         <p class="text-left relative top-0 left-8 md:hidden text-2xl md:text-4xl lg:text-5xl font-bold text-white">Menu .</p>
           <!-- Center Menu -->
-          <div class="m-auto w-[85%] relative h-[65%] top-20 flex items-center justify-center -translate-y-8
-  border border-[#232323] rounded-2xl  bg-linear-to-br from-[#0e0e14] to-[#15151f]"> 
-            <nav class="text-center space-y-6 text-white text-xl md:text-3xl lg:text-4xl font-medium">
+          <div class="m-auto w-[85%] relative h-[65%] top-20 flex items-center justify-center md:-translate-y-8 sm:-translate-y-8  -translate-y-14
+  border border-[#232323] rounded-2xl md:border md:border-black md:rounded-lg md:p-2 bg-linear-to-br from-[#0e0e14] to-[#15151f]"> 
+            <nav class="text-center space-y-8 text-white text-xl md:text-3xl lg:text-4xl font-medium">
               <a href="../index.html" class="block hover:text-[#14CF93] ">HOME</a>
               <a href="about.html" class="block text-[#14CF93]">ABOUT</a>
               <a href="projects.html" class="block hover:text-[#14CF93]">PROJECTS</a>
@@ -90,24 +89,28 @@
               <a href="academy.html" class="block hover:text-[#14CF93]">ACADEMY</a>
               <a href="blog.html" class="block hover:text-[#14CF93]">BLOGS & NEWS</a>
               <a href="contact.html" class="block hover:text-[#14CF93]">CONTACT</a>
-            </nav>
+            </nav> 
           </div>
 
           <!-- Bottom -->
-          <div class="flex items-end justify-between md:mx-24 m-auto md:gap-0 gap-6 mb-12">
+          <div class="flex flex-col md:flex-row mx-auto items-center mt-12 md:mt-8 justify-center md:justify-between gap-10 md:mt-18 mb-12 w-[90%]">
 
             <!-- Social -->
-            <div class="flex gap-3 ">
-              <a class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100">in</a>
-              <a class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100">𝕏</a>
-              <a class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100">◎</a>
+              <div class="flex gap-3 md:gap-6 items-center">
+              <a class=" w-7 h-7 md:w-12 md:h-12 rounded-full border-second flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100">
+                <img src="../src/image/in.png" alt="linkedin">
+              </a>
+              <a class=" w-7 h-7 md:w-12 md:h-12 rounded-full border-second flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100">
+                <img src="../src/image/x.png" alt="x">
+              </a>
+              <a class=" w-7 h-7 md:w-12 md:h-12 rounded-full border-second flex items-center justify-center cursor-pointer opacity-75 hover:opacity-100">◎</a>
             </div>
 
             <!-- Buttons -->
-            <div class="flex gap-3 flex-col md:flex-row ">
-              <a class=" flex items-center text-center " href="#" > <button class="btn btn-gradient btn-accent bg-[#14CF93] md:w-[235px] md:h-[45px] h-[30px] w-[180px] rounded-3xl text-white">    Start a New Project</button>
+            <div class="flex gap-3 flex-row   ">
+              <a class=" flex items-center text-center " href="#" > <button class="btn btn-gradient btn-accent bg-[#14CF93] md:w-[235px] md:h-[45px] text-[14px] h-[40px] w-[160px] rounded-3xl text-white">    Start a New Project</button>
               </a>
-              <a class=" flex items-center text-center " href="#" > <button class="btn btn-gradient btn-accent bg-white! border-white/20!  md:w-[235px] md:h-[45px] h-[30px] w-[180px] rounded-3xl text-black">      Book Appointment</button>
+              <a class=" flex items-center text-center " href="#" > <button class="btn btn-gradient btn-accent bg-white! border-white/20! text-[14px]  md:w-[235px] md:h-[45px] h-[40px] w-[160px] rounded-3xl text-black">      Book Appointment</button>
               </a>
             </div>
 
@@ -124,9 +127,9 @@
   </div>
 </header>
     <!-- End Page Header  -->
-     <main>
+     <main class="w-[85%] mx-auto">
       <!--Start Section about -->
-      <section id="about" class="about w-[85%] align-center mx-auto">
+      <section id="about" class="about  align-center ">
         <div class="head-about mt-16 mb-6 text-center md:w-[40%] mx-auto"> 
           <h1  data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
           class=" md:text-5xl text-4xl p-2  font-bold md:p-6  text-white">
@@ -171,10 +174,10 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
     <p class="text-white leading-relaxed md:text-xl text-sm p-4 text-left">
 Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO of Syntax, a Creative Education Company in the MENA region based in Egypt.
 </p>
-<div class="button flex gap-4 md:flex-row flex-col md:mt-24 mt-8">
-    <button class=" items-star  text-center btn btn-gradient btn-accent md:w-[210px] md:h-[45px] h-[30px] w-[180px] rounded-3xl text-white ">Download Resume
+<div class="button  flex gap-4 md:flex-row flex-col md:mt-24 mt-8">
+    <button class=" w-full items-star  text-center btn btn-gradient btn-accent md:w-[210px] md:h-[45px]  rounded-3xl text-white ">Download Resume
 </button>
-<button class="btn btn-gradient btn-accent !bg-white border !border-white md:w-[170px] md:h-[45px] h-[30px] w-[180px] h-12 rounded-3xl text-black text-center">
+<button class="w-full btn btn-gradient btn-accent !bg-white border !border-white md:w-[170px] md:h-[45px] rounded-3xl text-black text-center">
             Contact Me
             </button>
   
@@ -246,7 +249,7 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
       </section>
       <!--End Section Hero -->
       <!--Start Section UN -->
-      <section class=" py-16 px-2 w-[85%] ailgn-center mx-auto">
+      <section class=" py-16 px-2 ailgn-center ">
   <div class=" bg-transparent">
     
     <!-- Header -->
@@ -257,7 +260,7 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
 
     <!-- card-->
     <div class="">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center  ">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center  ">
 
     
         <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"  
@@ -323,10 +326,10 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
 </section>
       <!--End Section UN -->
       <!-- Start Section Latest Activites -->
-       <section id="colors"></section>
-        <section id="latest" class=" w-[85%] mx-auto mt-6 md:mt-24 z-20 relative">
+       <section id="colors" class=""></section>
+        <section id="latest" class=" mt-6 md:mt-24 z-20 relative">
             <h2 data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
-            class="text-center text-4xl font-semibold mb-12 ">
+            class="text-center text-2xl md:text-4xl font-semibold mb-12 ">
     Latest Activites
     </h2>
       <div class="cards grid md:grid-cols-3 grid-cols-1 gap-4">
@@ -361,32 +364,33 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
 
        <!-- Start Section Everything   -->
         <section 
-       class="relative w-[85%] mx-auto mt-20  space-y-12">
+       class="relative  mt-20  space-y-12">
         <!-- Heading -->
         <div class="text-center max-w-2xl mx-auto">
           <h2 data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
-          class="text-3xl md:text-4xl font-semibold">
+          class="text-xl md:text-4xl font-semibold">
             Everything you need to succeed
           </h2>
           <p data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
-          class="text-gray-400 mt-4 text-sm">
+          class="text-gray-400 mt-4 md:text-sm text-xs">
             We've thought of everything so you don't have to. Focus on your
             vision while we handle the rest.
           </p>
         </div>
 
         <!-- Top Card -->
+         
         <div  data-aos-delay="200" data-aos="fade-down" data-aos-duration="1000"
-          class="rounded-2xl p-8 md:p-10 bg-[#171717] border-second  shadow-[0_0_60px_rgba(0,0,0,0.6)] grid md:grid-cols-2 gap-10 py-12"
+          class="rounded-2xl p-8 md:p-10 bg-[#171717] border-second flex flex-col-reverse md:flex-row  shadow-[0_0_60px_rgba(0,0,0,0.6)] gap-10 py-12"
         >
           <!-- Left -->
-          <div class="text-left">
+          <div class="md:text-left sm:text-left text-center">
             <h3 
             data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
             class="text-3xl md:mt-8 md-1 font-semibold mb-3">
               Book A consultation
             </h3>
-            <p class="text-[#F8FAFC] text-sm leading-relaxed max-w-md">
+            <p class="text-[#F8FAFC] md:text-sm text-xs   leading-relaxed max-w-md">
               Through systematic, proven methodologies, I guide my clients to
               develop career growth, financial stability, and personal
               confidence through structured coaching programs tailored to the
@@ -394,7 +398,7 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
             </p>
 
             <button
-              class="flex items-star md:mb-7 mb-1 mt-2 text-center btn btn-gradient btn-accent w-[160px] h-[50px] rounded-4xl text-white"
+              class="flex items-star md:mb-7 mb-0 mt-2 text-center btn btn-gradient btn-accent md:w-[160px] md:h-[50px] w-full rounded-4xl text-white"
             >
               View Case Study
             </button>
@@ -471,9 +475,9 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
 
          <!-- start Section communication Shots -->
     <section data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
-       id="communication" class="w-[85%] md:py-24 py-8 mx-auto mt-32">
+       id="communication" class=" md:py-24 py-8  mt-32">
         <div
-          class="flex flex-col md:flex-row md:justify-between gap-8 md:gap-12 py-6 px-8 bg-[#171717] border-second rounded-2xl"
+          class="flex flex-col-reverse md:flex-row md:justify-between gap-8 md:gap-12 py-6 md:px-8 px-2 bg-[#171717] border-second rounded-2xl"
         >
           <!-- item left -->
           <div class="flex flex-col md:flex-col text-left md:w-[35%]">
@@ -502,7 +506,7 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
           </div>
 
           <!-- item right -->
-          <div class="flex flex-col gap-4 md:w-[40%]  lg:w-[30%] p-4 sm:p-8">
+          <div class="flex flex-col gap-4 md:w-[40%] w-full   lg:w-[30%] p-4 sm:p-8">
             <a data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000"
               href="#"
               class="flex items-center gap-4 py-4 px-4 border border-second rounded-2xl bg-[radial-gradient(371.89%_134.33%_at_3.21%_1.26%,rgba(255,255,255,0.07)_0%,rgba(217,217,217,0)_100%)]"
@@ -548,10 +552,10 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
         <!-- End Section communication Shots -->
      </main>
     <!-- Start Footer -->
-      <footer x-data="{ open: false }" class="w-full">
+      <footer x-data="{ open: false }" class="w-full mx-auto">
     <hr  />
   <!-- Desktop Footer -->
-  <div class="hidden md:flex mx-auto px-6 py-6 items-center justify-between">
+  <div class="hidden md:flex mx-auto px-6 w-[95%] py-6 items-center justify-between">
     <!-- Logo -->
     <div class="flex items-center gap-2 w-40 text-lg font-medium">
       <a href="#">
@@ -570,18 +574,20 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
       <a href="projects.html" class="hover:text-white transition">Projects</a>
     </nav>
 
-       <!-- Right action -->
 
+        <!-- Right action -->
+ 
    <div class="flex items-center gap-2">
    <span class="text-xs text-gray-500 md:mx-14 mx-8 relative "> © 2025 Ayman Taher </span>
 
    <div x-data="{ open: false }" class=" fixed bottom-4 
    animate-[float-y_1.5s_ease-in-out_infinite]
-  right-4 flex flex-col items-center gap-2 z-50">
+  right-4 flex flex-col items-center gap-2 z-[9999]
+">
 
 
     <!-- Dropdown Buttons  -->
-    <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2">
+    <div x-show="open" x-transition class="flex absolute bottom-16 flex-col gap-2 mb-2 x-transition">
       <a href="https://api.whatsapp.com/send/?phone=966543211714 " target="_blank"
          class="w-12 h-12 rounded-full bg-[#14CF93] flex items-center justify-center shadow-lg hover:bg-gray-400 transition ">
         <img width="38" src="https://img.icons8.com/fluency/48/whatsapp.png" alt="whatsapp"/>
@@ -624,7 +630,7 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
     <div
       x-show="open"
       x-transition.opacity
-      class="fixed inset-0 z-50 bg-gradient-to-br from-[#0e0e14] to-[#15151f] flex flex-col"
+      class="fixed inset-0 z-50 bg-gradient flex flex-col"
     >
       <!-- Top Bar -->
       <div class="flex justify-between items-center p-6">
@@ -637,7 +643,7 @@ Ayman Taher, the Product Design Lead at Aman E-Payment, is the founder and CEO o
       <!-- Navigation -->
 
           <div class="m-auto w-[85%] h-[45%] top-20 flex items-center justify-center -translate-y-8
-  border border-[#232323] rounded-2xl  bg-gradient-to-br from-[#0e0e14] to-[#15151f]"> 
+  border border-[#232323] rounded-2xl bg-gradient "> 
             <nav class="text-center space-y-4 text-white text-xl md:text-2xl font-medium">
               <a href="../index.html" class="block hover:text-[#14CF93]">HOME</a>
               <a href="about.html" class="block text-[#14CF93]">ABOUT</a>

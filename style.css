@@ -9,6 +9,9 @@ body {
   color: white;
   text-align: center;
   min-height: 100vh;
+    font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
 }
 * {
   box-sizing: border-box;
@@ -118,10 +121,14 @@ body {
 #colors {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0e0c15 50%);
   width: 100%;
+  overflow-x: hidden;
   height: 451px;
   position: absolute;
 }
-
+/* bg-menu */
+.bg-gradient {
+  background-image: linear-gradient(135deg, #0e0e14 0%, #15151f 100%);
+}
 .box-shadow-yellow {
   box-shadow:
     -19px 1px 15px #161302,
@@ -224,6 +231,9 @@ hr {
   .head-consultation h1 {
     line-height: 60px;
   }
+  .nav-box {
+     background :black
+  }
 }
 /* Tablet */
 @media (max-width: 1024px) {
@@ -234,6 +244,9 @@ hr {
   .head-consultation h2 {
     font-size: 28px;
     line-height: 44px;
+  }
+   .nav-box {
+     background-image: linear-gradient(135deg, #0e0e14 0%, #15151f 100%);
   }
   #consultation {
     img {
@@ -258,7 +271,9 @@ hr {
     font-size: 28px;
     line-height: 38px;
   }
-
+ .nav-box {
+     background-image: linear-gradient(135deg, #0e0e14 0%, #15151f 100%);
+  }
   #consultation {
     img {
       margin-top: 3rem;
@@ -275,6 +290,13 @@ hr {
   .h-card {
     height: 12rem;
   }
+}
+#colors {
+width: 91%;
+overflow: hidden;
+}
+section {
+  overflow-x: hidden;
 }
 }
 
